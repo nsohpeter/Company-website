@@ -32,25 +32,52 @@ export const sublinks = [
   {
     page: "OUR FOCUS",
     links: [
-      { label: "IMPACT", url: "/impact" },
-      { label: "INNOVATIONS", url: "/innovations" },
-      { label: "INSURANCE", url: "/insurance" },
-      { label: "WOMEN", url: "/women" },
-      { label: "CHILDREN", url: "/childre" },
+      {
+        label: "IMPACT",
+        url: "/impact",
+      },
+      {
+        label: "INNOVATIONS",
+        url: "/innovations",
+      },
+      {
+        label: "INSURANCE",
+        url: "/insurance",
+      },
+      {
+        label: "WOMEN",
+        url: "/women",
+      },
+      {
+        label: "CHILDREN",
+        url: "/children",
+      },
     ],
   },
   {
     page: "RESOURCES",
     links: [
-      { label: "PUBLICATIONS", url: "/publications" },
-      { label: "NEWS ROOM", url: "/new" },
+      {
+        label: "PUBLICATIONS",
+        url: "/publications",
+      },
+      {
+        label: "NEWS ROOM",
+        url: "/new",
+      },
     ],
   },
   {
     page: "WHERE WE WORK",
     links: [
-      { label: "UPPER-WEST", url: "/upperwest" },
-      { label: "NORTHERN REGION", url: "/northern" },
+      {
+        label: "UPPER-WEST",
+        url: "/upperwest",
+      },
+      {
+        label: "NORTHERN REGION",
+        url: "/northern",
+      },
     ],
   },
 ];

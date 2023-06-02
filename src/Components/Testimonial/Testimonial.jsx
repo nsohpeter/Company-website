@@ -7,6 +7,7 @@ import { testimonials } from "../../Utils/Data";
 
 //{name, img, occupation, testimonial}
 const Testimonial = () => {
+  // try updating my git repo
   const settings = {
     dots: true,
     infinite: false,

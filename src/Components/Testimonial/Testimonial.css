@@ -14,6 +14,7 @@
   justify-content: center;
   /* background-color: #97afe0; */
   width: 80% !important;
+  border-radius: 10px !important;
 }
 
 .container img {
@@ -42,7 +43,24 @@
 .details p {
 }
 
-@media (max-width: 768px) {
+@media (min-width: 450px), (max-width: 768px) {
+  .main-container .container {
+    width: 80% !important;
+  }
+
+  .container img {
+    margin-left: 2rem;
+
+    height: 100px;
+    width: 100px;
+  }
+
+  .slick-slider {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 450px) {
   .main-container .container {
     /* background-color: #97afe0; */
     width: 100% !important;
