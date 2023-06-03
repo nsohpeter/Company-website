@@ -174,37 +174,34 @@ export const CountUpData = [
   },
 ];
 
-export const testimonials = [
+export const Testimonials = [
   {
-    id: 1,
-    name: "John Doe",
-    img: "./photos/children.png",
-    occupation: "Web Developer",
-    testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae purus ac est aliquam suscipit. Ut posuere fringilla nibh ut tincidunt.",
+    name: "Rekob Ramya",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+    address: "USA",
+    img: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
   },
   {
-    id: 2,
-    name: "Jane Smith",
-    img: "./photos/children.png",
-    occupation: "Graphic Designer",
-    testimonial:
-      "Fusce lobortis fringilla felis, nec placerat ipsum sagittis et. Donec varius consectetur lacus, non rutrum diam lacinia sed.",
+    name: "Brandon Savage",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+
+    address: "USA",
+    img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
   },
   {
-    id: 3,
-    name: "Michael Johnson",
-    img: "./photos/children.png",
-    occupation: "Marketing Specialist",
-    testimonial:
-      "Sed ullamcorper volutpat tellus, ut ullamcorper massa sagittis eget. Sed ultricies fermentum erat, sed efficitur elit tristique id.",
+    name: "Steve Burns",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+    address: "USA",
+    img: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
   },
   {
-    id: 4,
-    name: "Michael Johnson",
-    img: "./photos/children.png",
-    occupation: "Marketing Specialist",
-    testimonial:
-      "Sed ullamcorper volutpat tellus, ut ullamcorper massa sagittis eget. Sed ultricies fermentum erat, sed efficitur elit tristique id.",
+    name: "Kevin Canlas",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+    address: "USA",
+    img: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
   },
 ];

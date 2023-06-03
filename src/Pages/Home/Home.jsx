@@ -12,8 +12,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { CountUpData } from "../../Utils/Data";
-import { testimonials } from "../../Utils/Data";
-import Testimonial from "../../Components/Testimonial/Testimonial";
+import Slick from "../../Components/SlickCarousel/Slick";
+//import { testimonials } from "../../Utils/Data";
+//import Testimonial from "../../Components/Testimonial/Testimonial";
 //import Card from '../../Components/Card/Card';
 //import Sidebar from '../../Components/Sidebar/Sidebar';
 
@@ -164,10 +165,7 @@ const Home = () => {
         variants={slideIn("up", "tween", 0.2, 1)}
         className="testimonial-container"
       >
-        <h2 style={{ textAlign: "center", color: "#fff" }}>
-          What our people are saying
-        </h2>
-        <Testimonial />
+        <Slick />
       </motion.div>
     </div>
   );
