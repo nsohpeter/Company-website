@@ -26,16 +26,16 @@ const Footer = () => {
             </div>
           </h3>
           <ul>
-            <Link to="/vision">
+            <Link to="/vision" style={{ textDecoration: "none" }}>
               <li>Our Vision, Mission & Values</li>
             </Link>
-            <Link to="/history">
+            <Link to="/history" style={{ textDecoration: "none" }}>
               <li>Our History</li>
             </Link>
-            <Link to="/leadership">
+            <Link to="/leadership" style={{ textDecoration: "none" }}>
               <li>Our Leadership</li>
             </Link>
-            <Link to="/accountability">
+            <Link to="/accountability" style={{ textDecoration: "none" }}>
               <li>Accountability</li>
             </Link>
           </ul>
@@ -48,13 +48,13 @@ const Footer = () => {
             </div>
           </h3>
           <ul>
-            <Link to="/livelihood">
+            <Link to="/livelihood" style={{ textDecoration: "none" }}>
               <li>our livelihoood promise</li>
             </Link>
-            <Link to="/projects">
+            <Link to="/projects" style={{ textDecoration: "none" }}>
               <li>projects</li>
             </Link>
-            <Link to="/donations">
+            <Link to="/donations" style={{ textDecoration: "none" }}>
               <li>impact of donations</li>
             </Link>
           </ul>

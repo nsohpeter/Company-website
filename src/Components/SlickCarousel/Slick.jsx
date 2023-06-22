@@ -59,8 +59,8 @@ const Slick = () => {
 
         <Slider
           {...settings}
-          //   id="customer-testimonoals"
-          //   className="owl-carousel owl-theme"
+          id="customer-testimonoals"
+          className="slick-theme"
         >
           {Testimonials.map((testiMonialDetail, index) => {
             return (

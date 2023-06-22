@@ -1,145 +1,148 @@
 .nav {
-     height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent; 
-    position: relative;
-    background-color: rgb(108, 123, 151);
-    transform: none;
-    transition:all 0.3s ease
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+  background-color: #4c4c6d;
+  transform: none;
+  transition: all 0.3s ease;
 }
- .nav.active{
-background-color: rgb(241, 245, 133);
-top: 0;
-position: sticky;
-z-index: 1;
+.nav.active {
+  background-color: rgb(16, 16, 5);
+  top: 0;
+  position: sticky;
+  z-index: 1;
 }
-
 
 .nav-center {
-    width: 100%;
-    max-width: var(--max-width);
+  width: 100%;
+  max-width: var(--max-width);
 }
 
 .nav-header {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-header .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 2rem;
 }
 
 .nav-header p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .nav-header p span {
-    color: crimson;
+  color: crimson;
 }
 
 .nav-logo {
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
+  width: 6%;
+  height: 6%;
+  border-radius: 50%;
 }
 
 .nav-header .toggle-btn {
-    display: block;
-    background-color: crimson;
-    margin-right: 4rem;
-    font-size: 1.2rem;
+  display: block;
+  background-color: crimson;
+  margin-right: 4rem;
+  font-size: 1.2rem;
 }
 
 .btn {
-    font-size: 1rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: var(--radius);
-    border-color: transparent;
-    color: white;
-    background: var(--clr-black);
-    cursor: pointer;
-    transition: var(--transition);
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  color: white;
+  background: var(--clr-black);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .btn:hover {
-    background: var(--clr-grey-5);
+  background: var(--clr-grey-5);
 }
 
 .nav-links {
-    display: none;
+  display: none;
 }
 
 .signIn {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
-    .nav-center {
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        
-        /*   width: 100%; */
-        /* display: grid;
+  .nav-center {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    /*   width: 100%; */
+    /* display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
         background-color: cadetblue; */
-    }
-    .toggle-btn {
-        display: none;
-    }
-    .signIn {
-        display: inline-block;
-        margin-left: 2rem;
-    }
-    .nav-header {}
-    .nav-header .toggle-btn {
-        display: none;
-    }
-    .nav-links {
-        position: absolute;
-        left: 40%;
-        display: flex;
-        align-items: center;
-        grid-area: 1rem;
-    }
-    .links {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-    .nav-links li {
-        height: 60%;
-        list-style: none;
-    }
-    .navigation {
-        display: flex;
-    }
-    .link-btn {
-        height: 100%;
-        background: transparent;
-        border-color: transparent;
-        font-size: 1rem;
-        color: white;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        width: 10rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .other-list {
-        cursor: pointer;
-        color: rgb(48, 24, 36);
-        font-size: 1.2rem;
-    }
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .signIn {
+    display: inline-block;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .nav-header {
+  }
+  .nav-header .toggle-btn {
+    display: none;
+  }
+  .nav-links {
+    position: absolute;
+    left: 32%;
+    display: flex;
+    align-items: center;
+    grid: 1rem;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav-links li {
+    height: 60%;
+    list-style: none;
+  }
+  .navigation {
+    display: flex;
+    margin-top: 2rem;
+  }
+  .link-btn {
+    height: 100%;
+    background: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 10rem;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .other-list {
+    cursor: pointer;
+    color: #ff8400;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+  }
 }

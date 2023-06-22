@@ -1,17 +1,22 @@
+.testimonials {
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
 .shadow-effect {
-  background: #fff;
-  padding: 20px;
+  background: #f7efef;
+  padding: 10px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid #ececec;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 19px 12px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
 }
-#shadow-effect p {
+.shadow-effect p {
   font-family: inherit;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0 0 17px 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 .img-circle {
   border-radius: 50%;
@@ -37,39 +42,29 @@
   color: #fff;
   box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.12), 0px 5px 7px rgba(0, 0, 0, 0.5);
 }
-#customer-testimonoals .item {
+
+.slick-theme .slick-active .item {
+  opacity: 1 !important;
+  transform: scale3d(0.9, 0.9, 1) !important;
+}
+.slick-dots {
+  color: black !important;
+  bottom: -5px !important;
+}
+.slick-theme .item {
   text-align: center;
-  padding: 50px;
+  padding: 10px;
   margin-bottom: 0px;
   opacity: 0.2;
   transform: scale3d(0.8, 0.8, 1);
   transition: all 0.3s ease-in-out;
 }
-#customer-testimonoals .owl-item.active.center .item {
-  opacity: 1;
-  transform: scale3d(1, 1, 1);
-}
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #56423d;
-  transform: translate3d(0px, -50%, 0px) scale(0.8);
-}
-.owl-carousel .owl-dots {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-.owl-carousel .owl-dots .owl-dot {
-  display: inline-block;
-}
-.owl-carousel .owl-dots .owl-dot span {
-  /* background: #eaa400; */
-  background: #56423d;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0 2px 5px;
-  transform: translate3d(0px, -50%, 0px) scale(0.3);
-  transform-origin: 50% 50% 0;
-  transition: all 250ms ease-out 0s;
+
+@media (max-width: 768px) {
+  .item {
+    padding: 2px !important;
+  }
+  .shadow-effect {
+    padding: 1px;
+  }
 }

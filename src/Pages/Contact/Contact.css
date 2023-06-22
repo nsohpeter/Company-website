@@ -1,0 +1,99 @@
+.main-contact-conatainer {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./image/campus-3.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  width: 90%;
+  padding: 3em 6em;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2em;
+}
+
+.content .contact-info {
+  width: 100%;
+  flex: 2;
+}
+
+.contact-datail {
+  display: flex;
+
+  padding: 30px 0;
+}
+
+.contact-datail .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.contact-datail .detail-text {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contact-datail .detail-text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+.contact-datail .detail-text p {
+  font-weight: 500;
+}
+
+.contact-form {
+  width: 50%;
+  flex: 2.5;
+  padding: 2em;
+  background: #fff;
+}
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  border: none;
+  border-bottom: 2px solid red;
+  outline: none;
+}
+
+.contact-form textarea {
+  width: 100%;
+  border: 2px solid var(--color-primary);
+  resize: none;
+  padding: 12px 12px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  color: #333;
+  font-size: 1.2rem;
+  transform: translate(-20px);
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100% !important;
+  }
+}

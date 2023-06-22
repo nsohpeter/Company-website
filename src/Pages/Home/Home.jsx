@@ -5,18 +5,10 @@ import { slideIn, fadeIn } from "../../Motions/FramerMotions";
 
 import HeroSlider from "../../Components/HeroSlider/HeroSlider";
 import CountUp, { useCountUp } from "react-countup";
-import { timeLimeData } from "../../Utils/Data";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+
 import { CountUpData } from "../../Utils/Data";
 import Slick from "../../Components/SlickCarousel/Slick";
-//import { testimonials } from "../../Utils/Data";
-//import Testimonial from "../../Components/Testimonial/Testimonial";
-//import Card from '../../Components/Card/Card';
-//import Sidebar from '../../Components/Sidebar/Sidebar';
+import Models from "../../Components/OurModels/Models";
 
 const Home = () => {
   const [readMore, setReadMore] = useState(" ");
@@ -75,65 +67,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* timeline section */}
-      <motion.div
-        initial="hidden"
-        animate="show"
-        variants={slideIn("up", "tween", 0.2, 1)}
-        className="timeline-container"
-        style={{ marginTop: "1.5rem" }}
-      >
-        <h2 style={{ textAlign: "center", color: "#fff" }}>What we do</h2>
-        <VerticalTimeline>
-          {timeLimeData.map((t, i) => {
-            const { Icon, title, desc } = t;
-
-            return (
-              <VerticalTimelineElement
-                key={i}
-                className="vertical-timeline-element--work"
-                contentStyle={{
-                  background: "rgb(242, 242, 242)",
-                  color: "black",
-                }}
-                contentArrowStyle={{
-                  borderRight: "7px solid  rgb(33, 150, 243)",
-                }}
-                icon={<Icon />}
-              >
-                {title ? (
-                  <React.Fragment>
-                    <h3 className="vertical-timeline-element-title">{title}</h3>
-                    {desc && (
-                      <p>
-                        {readMore === title
-                          ? desc
-                          : `${desc.substring(0, 80)}...`}
-                        <button
-                          onClick={() =>
-                            readMore === title
-                              ? setReadMore("")
-                              : setReadMore(title)
-                          }
-                        >
-                          {readMore === title ? "show less" : "read more"}
-                        </button>
-                      </p>
-                    )}
-                  </React.Fragment>
-                ) : undefined}
-              </VerticalTimelineElement>
-            );
-          })}
-        </VerticalTimeline>
-      </motion.div>
-
       {/* countup section */}
 
       <motion.div
         initial="hidden"
         whileInView="show"
-        variants={slideIn("up", "tween", 0.2, 1)}
+        variants={slideIn("up", "tween", 0.1, 1)}
         className="countup-container"
       >
         <h2 style={{ textAlign: "center" }}>our achievements</h2>
@@ -141,7 +80,6 @@ const Home = () => {
           {CountUpData.map((item, index) => {
             return (
               <div className="countup-item" key={index}>
-                <img src={item.img} alt={item.desc} />
                 <span>
                   <CountUp
                     start={0}
@@ -158,13 +96,14 @@ const Home = () => {
         </div>
       </motion.div>
 
+      {/* our models */}
+
+      <motion.div className="models-container">
+        <Models />
+      </motion.div>
+
       {/* testimonial section */}
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        variants={slideIn("up", "tween", 0.2, 1)}
-        className="testimonial-container"
-      >
+      <motion.div className="testimonial-container">
         <Slick />
       </motion.div>
     </div>

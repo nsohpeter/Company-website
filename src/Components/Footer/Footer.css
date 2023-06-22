@@ -1,13 +1,8 @@
 footer {
   width: 100%;
   margin: auto;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(64, 82, 121, 1) 48%,
-    rgba(119, 167, 177, 1) 100%
-  );
+  background: #333;
+
   color: #fff;
   padding: 50px 0 5px;
   margin-top: 1.5rem;
@@ -30,8 +25,9 @@ footer {
 }
 
 .col {
-  flex-basis: 25%;
-  padding: 10px;
+  flex-basis: 60%;
+  padding: 15px;
+  margin-left: 2rem;
 }
 
 .col:nth-child(2),
@@ -60,11 +56,11 @@ ul li {
   list-style: none;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  color: #ff8400;
 }
 
 ul li a {
   text-decoration: none;
-  color: #fff;
 }
 
 .col form {
@@ -121,7 +117,7 @@ ul li a {
   background: #767676;
   border-radius: 3px;
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 0;
   overflow: hidden;
 }

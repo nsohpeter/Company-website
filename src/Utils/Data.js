@@ -1,5 +1,22 @@
 import React from "react";
-import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
+import {
+  FaCreditCard,
+  FaBook,
+  FaMapMarker,
+  FaPhone,
+  FaEnvelope,
+  FaLowVision,
+  FaUserCog,
+  FaChalkboardTeacher,
+  FaCode,
+  FaBriefcase,
+  FaUserGraduate,
+  FaBrain,
+  FaBullseye,
+  FaLightbulb,
+} from "react-icons/fa";
+
+import { GiStairsGoal } from "react-icons/gi";
 
 export const peopleData = [
   {
@@ -121,7 +138,7 @@ export const timeLimeData = [
     id: 2,
     Icon: FaBook,
     heading: "SKILL FAIR TRAINING",
-    title: "coding",
+    title: "Coding for Society",
     desc: "Teaching Computer coding at the school is necessary to expose students to technology and reveal skills needed to develop computer applications. This will also provides with abilities and skills such as critical thinking, persistency, problem-solving, mathematical inclination, processing skills, determination, creativity and innovation.",
   },
   {
@@ -143,32 +160,28 @@ export const timeLimeData = [
     Icon: FaBook,
     heading: "SPECIAL NEED.",
     title: "special need education",
-    desc: "Focus on those with learning disabilities and support them. Our school program is basically a free community school run after school and on summer basis with the help of trained teachers’ volunteers. ",
+    desc: "Focus on those with learning disabilities and support them. Our school program is basically a free community school run after school and on summer basis with the help of trained teachers volunteers. ",
   },
 ];
 
 export const CountUpData = [
   {
     id: 1,
-    img: "./photos/children.png",
     value: 200,
     desc: "Children been tought",
   },
   {
     id: 2,
-    img: "./photos/women.png",
     value: 100,
     desc: "women supported with skill fair",
   },
   {
     id: 3,
-    img: "./photos/famers.png",
     value: 150,
     desc: "Farmers been helped",
   },
   {
     id: 4,
-    img: "./photos/school.png",
     value: 50,
     desc: "Basic schools being helped",
   },
@@ -178,30 +191,120 @@ export const Testimonials = [
   {
     name: "Rekob Ramya",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
-    address: "USA",
+      "The impact of this organization on my life is immeasurable. They believed in me when no one else did and gave me the opportunity to pursue my dreams. Thanks to their assistance, I have achieved things I never thought possible.",
+    address: "Sunyani",
     img: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
   },
   {
     name: "Brandon Savage",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+      "The programs and services offered by this organization have truly transformed my life. They equipped me with the necessary skills and knowledge to overcome challenges and create a better future for myself. I am forever grateful.",
 
-    address: "USA",
+    address: "Techiman",
     img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
   },
   {
     name: "Steve Burns",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
-    address: "USA",
+      "Words cannot express the impact this organization has had on my life. They not only provided me with essential resources but also restored my hope and belief in myself. I am now thriving and eager to give back to others in need.",
+    address: "Namdom",
     img: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
   },
   {
     name: "Kevin Canlas",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
-    address: "USA",
+      "I can't express how grateful I am for the support I received from this organization. They provided me with the resources and guidance I needed to turn my life around. I am now empowered and on a path towards a brighter future.",
+    address: "Tamale",
     img: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
+  },
+];
+
+export const contactInfo = [
+  {
+    id: 1,
+    Icon: FaMapMarker,
+    title: "Address",
+    value: "Fiapre, Sunyani",
+  },
+  {
+    id: 2,
+    Icon: FaPhone,
+    title: "Phone",
+    value: "+234 806 000 000",
+  },
+  {
+    id: 3,
+    Icon: FaEnvelope,
+    title: "Email",
+    value: "ejeyd@example.com",
+  },
+];
+
+export const visionItems = [
+  {
+    id: 1,
+    Icon: GiStairsGoal,
+    title: "Our Goal",
+    description:
+      ". To give hope and transformation to the children, and vulnerable poor women living in deprived communities to achieve UN’s Sustainable Development Goals (SDG):",
+  },
+  {
+    id: 2,
+    Icon: FaLowVision,
+    title: " Our Vision",
+    description:
+      "To influence policies and practice across Africa that fosters a safe, supportive and enabling community for persons with special needs to thrive.",
+  },
+  {
+    id: 3,
+    Icon: FaUserCog,
+    title: "Our Mission",
+    description:
+      "Showcase the creativity and strengths of children with special needs through arts and craft, functional IT activities.",
+  },
+];
+
+export const modelsData = [
+  {
+    Icon: FaChalkboardTeacher,
+    name: "Teaching",
+    description:
+      "Empowering students through quality education and effective teaching methodologies.",
+  },
+  {
+    Icon: FaCode,
+    name: "Digital Literacy",
+    description:
+      "Equipping individuals with coding skills to thrive in the digital age and pursue careers in technology.",
+  },
+  {
+    Icon: FaBriefcase,
+    name: "Livelihood Empowerment",
+    description:
+      "Supporting communities by providing training and resources to develop sustainable livelihoods.",
+  },
+  {
+    Icon: FaUserGraduate,
+    name: "Adolescent Transition Education",
+    description:
+      "Preparing adolescents for successful transitions into adulthood through comprehensive education programs.",
+  },
+  {
+    Icon: FaBrain,
+    name: "Special Needs Education",
+    description:
+      "Catering to the unique educational needs of individuals with special needs and promoting inclusivity.",
+  },
+  {
+    Icon: FaBullseye,
+    name: "Impact",
+    description:
+      "Creating positive social impact through various programs and initiatives.",
+  },
+  {
+    Icon: FaLightbulb,
+    name: "Innovation",
+    description:
+      "Promoting innovative approaches to address educational challenges and drive positive change.",
   },
 ];

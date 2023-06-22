@@ -1,0 +1,91 @@
+.main-vision-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+}
+
+.bamner-container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(184, 193, 248, 0.52),
+      rgba(231, 78, 190, 0.73)
+    ),
+    url("../../../photos/vision-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  color: white;
+  padding: 15%;
+}
+
+.bamner-container .text {
+  z-index: 9;
+  position: absolute;
+}
+
+.our-reasons {
+  margin: auto;
+  margin-top: 2.5rem;
+  width: 90%;
+}
+
+.card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.item-card {
+  width: 90%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  transition: 0.5s all ease-in-out;
+}
+.item-card:hover {
+  background-color: #fff;
+  box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
+  -webkit-box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
+  -moz-box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
+}
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.item-card h2 {
+  font-size: 1.5rem;
+  color: crimson;
+}
+.item-card p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .our-reasons {
+    margin-top: 2rem;
+  }
+  .bamner-container {
+    padding: 20%;
+  }
+  .bamner-container .text {
+    font-size: 0.8rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+  .item-card {
+    padding: 10px;
+    width: 100%;
+  }
+}
