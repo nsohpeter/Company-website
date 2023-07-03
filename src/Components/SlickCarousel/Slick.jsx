@@ -52,11 +52,6 @@ const Slick = () => {
         <div className="text-center ">
           <h3 className="sectionTitle">What Our Clients are Saying?</h3>
         </div>
-        <p className="text-center ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-
         <Slider
           {...settings}
           id="customer-testimonoals"

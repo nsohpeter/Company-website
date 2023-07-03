@@ -24,6 +24,12 @@ import About from "./Pages/About/About";
 import Donation from "./Pages/Donations/Donation";
 import Volunteer from "./Pages/Volunteer/Volunteer";
 
+import Teaching from "./Pages/Teaching/Teaching";
+import SpecialNeedEdu from "./Pages/SpecialNeedEdu/SpecialNeed";
+import Empowerment from "./Pages/Empowerment/Empowerment";
+import DigitalLiteracy from "./Pages/Digital-Literacy/DigitalLiteracy";
+import AdolescentEdu from "./Pages/AdolescentEdu/AdolescentEdu";
+
 function App() {
   return (
     <div className="App">
@@ -50,6 +56,11 @@ function App() {
             <Route path="vision" element={<Vision />} />
             <Route path="women" element={<Women />} />
             <Route path="branch" element={<Branch />} />
+            <Route path="teaching" element={<Teaching />} />
+            <Route path="literacy" element={<DigitalLiteracy />} />
+            <Route path="empowerment" element={<Empowerment />} />
+            <Route path="adolescentEdu" element={<AdolescentEdu />} />
+            <Route path="specialNeeds" element={<SpecialNeedEdu />} />
           </Route>
         </Routes>
 

@@ -9,15 +9,23 @@ const Models = () => {
       <h2 style={{ textAlign: "center" }}>OUR MODELS</h2>
       <div className="model-container">
         {modelsData.map((model, index) => {
-          const { Icon, name, description } = model;
+          const { Icon, name, description, url } = model;
           return (
-            <div className="model-card" key={index}>
+            <Link
+              to={url}
+              className="model-card"
+              key={index}
+              style={{ textDecoration: "none" }}
+            >
               <div className="model-icon">
                 <Icon />
               </div>
-              <h2>{name}</h2>
-              <p>{description}</p>
-            </div>
+              <div className="model-text">
+                <h2>{name}</h2>
+                <p>{description}</p>
+              </div>
+              <button className="model-btn">read more</button>
+            </Link>
           );
         })}
       </div>

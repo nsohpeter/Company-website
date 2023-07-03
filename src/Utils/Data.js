@@ -268,43 +268,95 @@ export const modelsData = [
   {
     Icon: FaChalkboardTeacher,
     name: "Teaching",
+    url: "/teaching",
     description:
       "Empowering students through quality education and effective teaching methodologies.",
   },
   {
     Icon: FaCode,
     name: "Digital Literacy",
+    url: "/literacy",
     description:
       "Equipping individuals with coding skills to thrive in the digital age and pursue careers in technology.",
   },
   {
     Icon: FaBriefcase,
     name: "Livelihood Empowerment",
+    url: "/empowerment",
     description:
       "Supporting communities by providing training and resources to develop sustainable livelihoods.",
   },
   {
     Icon: FaUserGraduate,
     name: "Adolescent Transition Education",
+    url: "/adolescentEdu",
     description:
       "Preparing adolescents for successful transitions into adulthood through comprehensive education programs.",
   },
   {
     Icon: FaBrain,
     name: "Special Needs Education",
+    url: "specialNeeds",
     description:
       "Catering to the unique educational needs of individuals with special needs and promoting inclusivity.",
   },
   {
     Icon: FaBullseye,
     name: "Impact",
+    url: "/impact",
     description:
       "Creating positive social impact through various programs and initiatives.",
   },
   {
     Icon: FaLightbulb,
     name: "Innovation",
+    url: "/innovations",
     description:
       "Promoting innovative approaches to address educational challenges and drive positive change.",
+  },
+];
+
+export const positionData = [
+  {
+    role: "Graphic Designer",
+    image: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
+    name: "Jane Smith",
+    description:
+      "Creative and detail-oriented graphic designer with expertise in Adobe Creative Suite. Proficient in creating visually appealing designs for both print and digital media.",
+  },
+  {
+    role: "Marketing Manager",
+    image: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
+    name: "Alex Johnson",
+    description:
+      "Results-driven marketing manager with a proven track record in developing and executing successful marketing campaigns. Skilled in market research, strategic planning, and brand management.",
+  },
+  {
+    role: "Data Analyst",
+    image: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
+    name: "David Lee",
+    description:
+      "Analytical and detail-oriented data analyst with expertise in data manipulation, statistical analysis, and data visualization. Proficient in programming languages such as Python and SQL. ",
+  },
+  {
+    role: "Project Manager",
+    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
+    name: "Emily Thompson",
+    description:
+      "Seasoned project manager with a strong background in leading cross-functional teams and managing complex projects. Skilled in project planning, budgeting, and resource allocation. ",
+  },
+  {
+    role: "Sales Representative",
+    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
+    name: "Michael Davis",
+    description:
+      "Dynamic and goal-oriented sales representative with a proven track record in driving sales growth and building strong customer relationships.",
+  },
+  {
+    role: "UX/UI Designer",
+    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
+    name: "Sarah Wilson",
+    description:
+      "User-centric UX/UI designer with a passion for creating intuitive and visually appealing digital experiences. Proficient in user research, wireframing,",
   },
 ];

@@ -27,7 +27,7 @@ const Home = () => {
 
       <div className="about-main-container">
         <h2 style={{ textAlign: "center", color: "black" }}>
-          What our people are{" "}
+          Organisation Profile{" "}
         </h2>
         <div className="about-container">
           <motion.div

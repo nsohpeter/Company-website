@@ -61,11 +61,11 @@ const Navbar = () => {
     >
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <div className="logo">
               <img src="./photos/Logo.jpg" className="nav-logo" alt="logo" />
               <p>
-                ECHENDAA <span> COMPANY</span> LTD
+                Nung A Bibile <span> Foundation</span>
               </p>
             </div>
           </Link>

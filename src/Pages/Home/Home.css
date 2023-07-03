@@ -27,12 +27,12 @@
 }
 
 .left {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
-      rgba(245, 246, 252, 0.52),
-      rgba(117, 19, 93, 0.73)
-    ),
-    url("../../../photos/school.png");
+      rgba(52, 53, 56, 0.52),
+      rgba(243, 208, 234, 0.73)
+    ), */
+  background-image: url("../../../photos/school.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,12 +42,17 @@
   padding: 20px;
   flex: 1.5;
   position: relative;
+  z-index: 1;
+  opacity: 0.8;
 }
 
 .text {
   position: absolute;
-  top: 20%;
+  top: 0%;
   left: 10%;
+  color: darkorange;
+  z-index: 99;
+  opacity: 1;
 }
 .image-btn {
   position: absolute;

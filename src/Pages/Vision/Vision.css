@@ -15,13 +15,15 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-
+  position: relative;
   color: white;
   padding: 15%;
 }
 
 .bamner-container .text {
   z-index: 9;
+  color: #fff;
+  top: 30%;
   position: absolute;
 }
 
@@ -51,7 +53,7 @@
   transition: 0.5s all ease-in-out;
 }
 .item-card:hover {
-  background-color: #fff;
+  background-color: #e1cccc;
   box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
   -webkit-box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
   -moz-box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);

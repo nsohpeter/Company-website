@@ -60,7 +60,8 @@
 }
 
 .dropdown-btn {
-  background-color: wheat;
+  color: #fff;
+  background-color: transparent;
   border: none;
   width: 100%;
   display: flex;

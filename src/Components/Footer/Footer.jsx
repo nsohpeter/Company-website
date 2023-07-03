@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="col">
           <h3>
-            Company Details
+            Organization Details
             <div className="underline">
               <span></span>
             </div>
@@ -79,7 +79,7 @@ const Footer = () => {
           </form>
           <div className="social-icons">
             <li className="icon">
-              <a href="https://web.facebook.com/nsoh.peter.5">
+              <a href="https://www.facebook.com/profile.php?id=100094149665884">
                 <FaFacebook />
               </a>
             </li>
