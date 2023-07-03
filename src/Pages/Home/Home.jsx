@@ -11,11 +11,10 @@ import Slick from "../../Components/SlickCarousel/Slick";
 import Models from "../../Components/OurModels/Models";
 
 const Home = () => {
-  const [readMore, setReadMore] = useState(" ");
+  //const [readMore, setReadMore] = useState(" ");
 
   useCountUp({
     ref: "counter",
-
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
   });
@@ -30,25 +29,17 @@ const Home = () => {
           Organisation Profile{" "}
         </h2>
         <div className="about-container">
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            variants={slideIn("left", "tween", 0.2, 1)}
-            className="left"
-          >
-            <div className="text">
-              <h2>
-                We're working to end <br /> intergenerational poverty.
-              </h2>
+          <div className="left">
+            <div className="left-overlay">
+              <div className="text">
+                <h2>
+                  We're working to end <br /> intergenerational poverty.
+                </h2>
+              </div>
             </div>
             <button className="about-btn image-btn">learn more</button>
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            variants={slideIn("right", "tween", 0.2, 1)}
-            className="right"
-          >
+          </div>
+          <div className="right">
             <h2>ORGANISATION PROFILE</h2>
             <p>
               The Nung A Bibile Foundation (NABF) is a registered non-profit
@@ -63,18 +54,13 @@ const Home = () => {
               Childhood Development.
             </p>
             <button className="about-btn">learn more</button>
-          </motion.div>
+          </div>
         </div>
       </div>
 
       {/* countup section */}
 
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        variants={slideIn("up", "tween", 0.1, 1)}
-        className="countup-container"
-      >
+      <div className="countup-container">
         <h2 style={{ textAlign: "center" }}>our achievements</h2>
         <div className="countup-container-inner">
           {CountUpData.map((item, index) => {
@@ -94,13 +80,13 @@ const Home = () => {
             );
           })}
         </div>
-      </motion.div>
+      </div>
 
       {/* our models */}
 
-      <motion.div className="models-container">
+      <div className="models-container">
         <Models />
-      </motion.div>
+      </div>
 
       {/* testimonial section */}
       <motion.div className="testimonial-container">

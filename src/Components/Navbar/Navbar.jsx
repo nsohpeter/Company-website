@@ -76,55 +76,43 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
+        <ul className="links">
+          <li onMouseOver={displaySubmenu}>
+            <button onMouseOver={displaySubmenu} className="link-btn">
+              OUR FOCUS
+              <KeyboardArrowDownIcon className="link-btn" />
+            </button>
+          </li>
+          <li onMouseOver={displaySubmenu}>
+            <button onMouseOver={displaySubmenu} className="link-btn">
+              RESOURCES
+              <KeyboardArrowDownIcon className="link-btn" />
+            </button>
+          </li>
+          <li onMouseOver={displaySubmenu}>
+            <button onMouseOver={displaySubmenu} className="link-btn">
+              WHERE WE WORK
+              <KeyboardArrowDownIcon className="link-btn" />
+            </button>
+          </li>
 
-        <div className="nav-links">
-          <ul className="links">
-            <div className="navigation">
-              <li onMouseOver={displaySubmenu}>
-                <button onMouseOver={displaySubmenu} className="link-btn">
-                  OUR FOCUS
-                  <KeyboardArrowDownIcon className="link-btn" />
-                </button>
-              </li>
-              <li onMouseOver={displaySubmenu}>
-                <button onMouseOver={displaySubmenu} className="link-btn">
-                  RESOURCES
-                  <KeyboardArrowDownIcon className="link-btn" />
-                </button>
-              </li>
-              <li onMouseOver={displaySubmenu}>
-                <button onMouseOver={displaySubmenu} className="link-btn">
-                  WHERE WE WORK
-                  <KeyboardArrowDownIcon className="link-btn" />
-                </button>
-              </li>
-            </div>
-            <Link to="/volunteer" style={{ textDecoration: "none" }}>
-              <li className="other-list">
-                <span>volunteer</span>
-              </li>
-            </Link>
-            <Link to="/donation" style={{ textDecoration: "none" }}>
-              <li className="other-list">
-                <span>Donation</span>
-              </li>
-            </Link>
-            <Link to="/vision" style={{ textDecoration: "none" }}>
-              <li className="other-list">
-                <span>About us</span>
-              </li>
-            </Link>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              <li className="other-list">
-                <span>contact</span>
-              </li>
-            </Link>
-          </ul>
+          <Link to="/volunteer" className="other-links">
+            volunteer
+          </Link>
+          <Link to="/donation" className="other-links">
+            Donation
+          </Link>
+          <Link to="/vision" className="other-links">
+            About us
+          </Link>
+          <Link to="/contact" className="other-links">
+            contact
+          </Link>
+        </ul>
 
-          <div className="signIn">
+        {/* <div className="signIn">
             <button className="btn signin-btn">sign in</button>
-          </div>
-        </div>
+          </div> */}
       </div>
     </motion.nav>
   );
