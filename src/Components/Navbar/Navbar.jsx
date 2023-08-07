@@ -99,9 +99,9 @@ const Navbar = () => {
           <Link to="/volunteer" className="other-links">
             volunteer
           </Link>
-          <Link to="/donation" className="other-links">
+          {/*  <Link to="/donation" className="other-links">
             Donation
-          </Link>
+          </Link> */}
           <Link to="/vision" className="other-links">
             About us
           </Link>
@@ -109,10 +109,6 @@ const Navbar = () => {
             contact
           </Link>
         </ul>
-
-        {/* <div className="signIn">
-            <button className="btn signin-btn">sign in</button>
-          </div> */}
       </div>
     </motion.nav>
   );

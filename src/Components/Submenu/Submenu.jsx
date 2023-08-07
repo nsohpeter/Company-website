@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Submenu.css";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Submenu = () => {

@@ -56,14 +56,18 @@
 
 .submenu h4 {
   margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: black;
 }
 
 .submenu-center .links {
-  width: 15rem;
+  width: 12rem;
   display: block;
   color: var(--dark-shadow);
   text-transform: capitalize;
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
 }

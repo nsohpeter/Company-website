@@ -117,7 +117,6 @@ ul li a {
   background: #767676;
   border-radius: 3px;
   position: absolute;
-  top: 30px;
   left: 0;
   overflow: hidden;
 }
@@ -152,5 +151,8 @@ ul li a {
   .col:nth-child(2),
   .col:nth-child(3) {
     flex-basis: 100%;
+  }
+  .row {
+    width: 100%;
   }
 }

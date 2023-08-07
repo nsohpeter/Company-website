@@ -3,9 +3,6 @@ import "./HeroSlider.css";
 
 import { useState, useEffect } from "react";
 
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-
 import { peopleData } from "../../Utils/Data";
 
 const HeroSlider = () => {
@@ -60,7 +57,7 @@ const HeroSlider = () => {
 
 export default HeroSlider;
 
-const People = ({ people, index, nextSlide, prevSlide }) => {
+const People = ({ people, index }) => {
   return (
     <div className="section-center">
       <div className="overlay">
@@ -69,6 +66,10 @@ const People = ({ people, index, nextSlide, prevSlide }) => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
             Impedit, cumque!
           </h1>
+          <div className="buttons-container">
+            <button className="hero-btn">learn more</button>
+            <button className="hero-btn">Donate</button>
+          </div>
         </div>
       </div>
       <div className="slides">
@@ -90,13 +91,6 @@ const People = ({ people, index, nextSlide, prevSlide }) => {
             </article>
           );
         })}
-
-        <button className="prev" onClick={() => prevSlide()}>
-          <ArrowBackIosNewIcon />
-        </button>
-        <button className="next" onClick={() => nextSlide()}>
-          <ArrowForwardIosIcon />
-        </button>
       </div>
     </div>
   );

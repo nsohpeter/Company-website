@@ -22,5 +22,14 @@
 }
 .leadership-container {
   width: 100%;
-  margin: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+  }
+  .banner-container .text {
+    font-size: 2rem;
+  }
 }

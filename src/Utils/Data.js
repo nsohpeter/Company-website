@@ -173,7 +173,7 @@ export const CountUpData = [
   {
     id: 2,
     value: 100,
-    desc: "women supported with skill fair",
+    desc: "women supported  with skill fair",
   },
   {
     id: 3,
@@ -319,21 +319,21 @@ export const modelsData = [
 export const positionData = [
   {
     role: "Graphic Designer",
-    image: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
+    image: "photos/leader1.jpg",
     name: "Jane Smith",
     description:
       "Creative and detail-oriented graphic designer with expertise in Adobe Creative Suite. Proficient in creating visually appealing designs for both print and digital media.",
   },
   {
     role: "Marketing Manager",
-    image: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
+    image: "photos/leader2.jpg",
     name: "Alex Johnson",
     description:
       "Results-driven marketing manager with a proven track record in developing and executing successful marketing campaigns. Skilled in market research, strategic planning, and brand management.",
   },
   {
     role: "Data Analyst",
-    image: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
+    image: "photos/leader3.jpg",
     name: "David Lee",
     description:
       "Analytical and detail-oriented data analyst with expertise in data manipulation, statistical analysis, and data visualization. Proficient in programming languages such as Python and SQL. ",
@@ -345,18 +345,102 @@ export const positionData = [
     description:
       "Seasoned project manager with a strong background in leading cross-functional teams and managing complex projects. Skilled in project planning, budgeting, and resource allocation. ",
   },
+];
+export const ValuesData = [
   {
-    role: "Sales Representative",
-    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
-    name: "Michael Davis",
-    description:
-      "Dynamic and goal-oriented sales representative with a proven track record in driving sales growth and building strong customer relationships.",
+    id: 1,
+    Icon: FaLowVision,
+    title: " Our Vision",
+    description: "EMPOWERING PEOPLE OUT OF POVERTY",
   },
   {
-    role: "UX/UI Designer",
+    id: 2,
+    Icon: FaUserCog,
+    title: "Our Mission",
+    description: "PROVIDE EDUCATION TO CHILDREN IN DEPRIVE AREA",
+  },
+  {
+    id: 3,
+    Icon: GiStairsGoal,
+    title: "Our Values",
+    description: "REACHING OUT TO THE VULNERABLE IN SOCIETY",
+  },
+];
+
+export const recentActivities = [
+  {
+    id: 1,
+    image: "./photos/teaching.jpg",
+    activity: "Capitalize on low hanging fruit to identify ballpark",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+  },
+  {
+    id: 2,
+    image: "./photos/women.png",
+    activity: "Capitalize on low hanging fruit to identify ballpark",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+  },
+  {
+    id: 3,
+    image: "./photos/children.png",
+    activity: "Capitalize on low hanging fruit to identify ballpark",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+  },
+];
+
+export const bannerData = [
+  {
+    Icon: FaChalkboardTeacher,
+    title: "Make a Donation",
+    description: "make a donation to save a life",
+    color: {
+      backGround:
+        "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
+      boxShadow: "0px 10px 20px 0px #F9D59B",
+    },
+    url: "/donation",
+  },
+  {
+    Icon: FaBullseye,
+    title: "fund Raising",
+    description: "your fund will go a long way to touch a life",
+    color: {
+      backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
+      boxShadow: "0px 10px 20px 0px #FDC0C7",
+    },
+    url: "/donation",
+  },
+  {
+    Icon: FaBrain,
+    title: "Become a volnteer",
+    description: "Become a volunteer to impact knowledge",
+    color: {
+      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    url: "/volunteer",
+  },
+];
+
+export const voluntaryData = [
+  {
+    role: "Graphic Designer",
+    image: "photos/leader1.jpg",
+    name: "Jane Smith",
+  },
+  {
+    role: "frontend mentor",
+    image: "photos/leader2.jpg",
+    name: "Selina lowrence",
+  },
+  {
+    role: "French Teacher",
+    image: "photos/leader3.jpg",
+    name: "David Lee",
+  },
+  {
+    role: "Mobile app mentor",
     image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
-    name: "Sarah Wilson",
-    description:
-      "User-centric UX/UI designer with a passion for creating intuitive and visually appealing digital experiences. Proficient in user research, wireframing,",
+    name: "Emily Thompson",
   },
 ];

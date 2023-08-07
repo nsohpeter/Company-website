@@ -1,0 +1,22 @@
+.main-donation-conatainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+}
+.main-donation-conatainer .banner-container {
+  background-image: url("../../../photos/donate2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  color: white;
+  padding: 20%;
+}
+.main-donation-conatainer .banner-container .text {
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: #fff;
+}

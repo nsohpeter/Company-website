@@ -15,7 +15,7 @@
 
 .sidebar-wrapper.show {
   visibility: visible;
-  z-index: 2;
+  z-index: 99;
   transform: translateX(0%);
 }
 
@@ -73,4 +73,13 @@
 
 .nested-subLinks {
   color: #fff;
+}
+
+.other-links {
+  margin-left: 1.3rem;
+}
+.other-list {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
 }

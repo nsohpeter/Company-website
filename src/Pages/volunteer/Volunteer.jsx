@@ -1,6 +1,7 @@
 import React from "react";
 import "./Volunteer.css";
 import { Link } from "react-router-dom";
+import { voluntaryData } from "../../Utils/Data";
 
 const Volunteer = () => {
   return (
@@ -26,6 +27,24 @@ const Volunteer = () => {
           underserved communities, gain access to education and opportunities
           they might not otherwise have.
         </p>
+      </div>
+
+      <h3 style={{ textAlign: "center" }}>Our current voluntary Teachers</h3>
+      <div className="voluntary-members">
+        {voluntaryData.map((member, index) => {
+          const { image, role, name } = member;
+          return (
+            <div className="single-member" key={index}>
+              <div className="image-container">
+                <img src={image} alt={name} />
+              </div>
+              <div className="member-text">
+                <h2>{name}</h2>
+                <p>{role}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
