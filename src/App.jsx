@@ -16,7 +16,7 @@ import History from "./Pages/History/History";
 import Impact from "./Pages/Impact/Impact";
 import Innovation from "./Pages/Innovation/Innovation";
 import Insurance from "./Pages/Insurance/Insurance";
-import Leadership from "./Pages/Leadership/Leadership";
+import Leadership from "./Pages/LeaderShip/Leadership";
 import Vision from "./Pages/Vision/Vision";
 import Women from "./Pages/Women/Women";
 import Branch from "./Pages/Workplaces/Branch";
