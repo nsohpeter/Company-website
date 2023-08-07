@@ -22,7 +22,7 @@ import Women from "./Pages/Women/Women";
 import Branch from "./Pages/Workplaces/Branch";
 import About from "./Pages/About/About";
 import Donation from "./Pages/Donations/Donation";
-import Volunteer from "./Pages/Volunteer/Volunteer";
+import Volunteer from "./Pages/volunteer/Volunteer";
 
 import Teaching from "./Pages/Teaching/Teaching";
 import SpecialNeedEdu from "./Pages/SpecialNeedEdu/SpecialNeed";
