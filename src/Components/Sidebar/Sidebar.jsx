@@ -24,7 +24,7 @@ const Sidebar = () => {
 
         <ul className="other-links">
           <Link
-            to="/product"
+            to="/products"
             style={{ textDecoration: "none" }}
             onClick={() => dispatch(closeSidebar())}
           >
