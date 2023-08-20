@@ -24,21 +24,21 @@ const Sidebar = () => {
 
         <ul className="other-links">
           <Link
-            to="/volunteer"
+            to="/product"
             style={{ textDecoration: "none" }}
             onClick={() => dispatch(closeSidebar())}
           >
             <li className="other-list">
-              <span>volunteer</span>
+              <span>PRODUCTS</span>
             </li>
           </Link>
           <Link
-            to="/donation"
+            to="/service"
             style={{ textDecoration: "none" }}
             onClick={() => dispatch(closeSidebar())}
           >
             <li className="other-list">
-              <span>Donation</span>
+              <span>SERVICES</span>
             </li>
           </Link>
           <Link
@@ -47,7 +47,7 @@ const Sidebar = () => {
             onClick={() => dispatch(closeSidebar())}
           >
             <li className="other-list">
-              <span>About us</span>
+              <span>ABOUT US</span>
             </li>
           </Link>
           <Link
@@ -56,7 +56,7 @@ const Sidebar = () => {
             onClick={() => dispatch(closeSidebar())}
           >
             <li className="other-list">
-              <span>contact</span>
+              <span>CONTACT US</span>
             </li>
           </Link>
         </ul>
