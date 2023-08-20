@@ -1,0 +1,43 @@
+.main-service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  margin: 2rem auto;
+
+  max-width: 1544px;
+}
+.single-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100%;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+  margin: 1rem 2.5rem;
+
+  background-color: #eee4e4;
+}
+.single-service svg {
+  font-size: 3rem;
+}
+.single-service h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.single-service p {
+  font-size: 1.2rem;
+}

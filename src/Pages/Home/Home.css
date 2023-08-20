@@ -3,40 +3,6 @@
   overflow: hidden;
 }
 
-.hero-section {
-}
-
-.mini-banner {
-  margin: 0 auto;
-}
-
-.countup-container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-}
-/* models css */
-.models-container {
-  margin: 0 auto;
-  margin-top: 3rem;
-  width: 100%;
-  max-width: 1440px;
-}
-
-/* .testimonial-container {
-  margin-top: 1rem;
-} */
-.values-container {
-  margin: 0 auto;
-  margin-top: 3rem;
-  width: 100%;
-  max-width: 1440px;
-}
-
-.activity-container {
-  background-color: ghostwhite;
-  margin: 0 auto;
+.products-section {
   margin-top: 2rem;
-  width: 100%;
-  max-width: 1440px;
 }

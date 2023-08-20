@@ -1,44 +1,30 @@
 import React, { useState } from "react";
 import "./Home.css";
-
 import HeroSlider from "../../Components/HeroSlider/HeroSlider";
-
-import Models from "../../Components/OurModels/Models";
-import CounterSlick from "../../Components/CounterSlick/CounterSlick";
-import Values from "../../Components/Values/Values";
-import RecentActivities from "../../Components/RecentActivities/RecentActivities";
-import BannerCard from "../../Components/BannerCard/BannerCard";
+import Slick from "../../Components/Carousel/Slick";
+import Myproducts from "../../Components/myproducts/Myproducts";
 
 const Home = () => {
   return (
     <div className="main-home">
-      <div className="hero-section">
+      <div className="hero-slider">
         <HeroSlider />
       </div>
 
-      <div className="mini-banner">
-        <BannerCard />
+      <div className="products-section">
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "2.2rem",
+            color: "rgb(227, 72, 16)",
+          }}
+        >
+          what we have on stock
+        </h1>
+        <Myproducts />
       </div>
-
-      {/* countup section */}
-      <div className="countup-container">
-        <CounterSlick />
-      </div>
-
-      {/* our models */}
-      <div className="models-container">
-        <Models />
-      </div>
-      {/* our values */}
-      <div className="values-container">
-        <Values />
-      </div>
-      {/*Recent activities */}
-      <div className="activity-container">
-        <h2 style={{ textAlign: "center", fontSize: "2rem" }}>
-          Recent activities
-        </h2>
-        <RecentActivities />
+      <div className="testimonial">
+        <Slick />
       </div>
     </div>
   );
