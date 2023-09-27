@@ -318,7 +318,7 @@ export const modelsData = [
 
 export const positionData = [
   {
-    role: "Graphic Designer",
+    role: "Board Chairman",
     image: "photos/leader1.jpg",
     name: "Jane Smith",
     description:
@@ -332,15 +332,15 @@ export const positionData = [
       "Results-driven marketing manager with a proven track record in developing and executing successful marketing campaigns. Skilled in market research, strategic planning, and brand management.",
   },
   {
-    role: "Data Analyst",
+    role: "Secretary",
     image: "photos/leader3.jpg",
     name: "David Lee",
     description:
       "Analytical and detail-oriented data analyst with expertise in data manipulation, statistical analysis, and data visualization. Proficient in programming languages such as Python and SQL. ",
   },
   {
-    role: "Project Manager",
-    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
+    role: "CEO",
+    image: "photos/leader4.jpg",
     name: "Emily Thompson",
     description:
       "Seasoned project manager with a strong background in leading cross-functional teams and managing complex projects. Skilled in project planning, budgeting, and resource allocation. ",
