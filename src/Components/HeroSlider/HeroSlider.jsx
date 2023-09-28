@@ -2,7 +2,6 @@ import React from "react";
 import "./HeroSlider.css";
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import { peopleData } from "../../Utils/Data";
 
@@ -64,14 +63,12 @@ const People = ({ people, index }) => {
       <div className="overlay">
         <div className="overlay-text">
           <h1 className="overlay-text-item">
-            Welcome to Trinity Electronics and Accessories – your go-to
-            destination for high-quality electronics and accessories that
-            enhance your tech experience.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
+            Impedit, cumque!
           </h1>
           <div className="buttons-container">
-            <Link to="/about">
-              <button className="hero-btn">learn more</button>
-            </Link>
+            <button className="hero-btn">learn more</button>
+            <button className="hero-btn">Donate</button>
           </div>
         </div>
       </div>
