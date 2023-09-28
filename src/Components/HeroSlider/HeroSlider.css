@@ -24,13 +24,13 @@
 }
 .overlay .overlay-text {
   width: 100%;
-
   text-align: left;
-  align-self: center;
+  /* align-self: center; */
   max-width: 1440px;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
+  margin-left: 4rem;
   /* top: 20%; */
 }
 .section-center .overlay-text-item {

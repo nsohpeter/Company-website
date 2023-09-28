@@ -11,7 +11,7 @@ footer {
 }
 
 .row {
-  width: 85%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -25,9 +25,9 @@ footer {
 }
 
 .col {
-  /* flex-basis: 60%; */
+  flex-basis: 20%;
   padding: 15px;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .col:nth-child(2),
@@ -52,7 +52,7 @@ hr {
   position: relative;
 }
 .col .para {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #ff8400;
 }
 

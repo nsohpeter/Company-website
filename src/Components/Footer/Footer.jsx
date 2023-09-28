@@ -16,7 +16,9 @@ const Footer = () => {
       <div className="row">
         <div className="col">
           <img src="../../photos/Logo.jpg" alt="" />
-          <p className="para">The Nung A Bibile Foundation (NABF)</p>
+          <p className="para">
+            The Nung A Bibile <br /> Foundation (NABF)
+          </p>
         </div>
         <div className="col">
           <h3>

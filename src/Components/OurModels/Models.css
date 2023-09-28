@@ -1,6 +1,7 @@
 .main-model-container {
   width: 100%;
-  margin: auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .model-container {
@@ -18,7 +19,7 @@
 }
 
 .model-card {
-  width: 100%;
+  width: 80%;
   height: 300px;
 
   display: flex;
