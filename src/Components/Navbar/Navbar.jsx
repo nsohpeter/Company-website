@@ -2,13 +2,9 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../Motions/FramerMotions";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 import { FaBars } from "react-icons/fa";
-import {
-  openSidebar,
-  openSubmenu,
-  closeSubmenu,
-} from "../../Features/General/GeneralSlice";
+import { openSidebar } from "../../Features/General/GeneralSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -17,23 +13,6 @@ const Navbar = () => {
   const [navbarcolor, setNavbarColor] = useState(false);
   const {} = useSelector((store) => store.General);
   const dispatch = useDispatch();
-
-  const displaySubmenu = (e) => {
-    const page = e.target.textContent;
-
-    const tempBtn = e.target.getBoundingClientRect();
-
-    const center = (tempBtn.left + tempBtn.right) / 2;
-    const Bottom = tempBtn.Bottom - 3;
-
-    dispatch(openSubmenu({ page, location: { center, Bottom } }));
-  };
-
-  const handleCloseMenu = (e) => {
-    if (!e.target.classList.contains("link-btn")) {
-      dispatch(closeSubmenu());
-    }
-  };
 
   useEffect(() => {
     function handleNavColor() {
@@ -57,7 +36,6 @@ const Navbar = () => {
       variants={headerVariants}
       viewport={{ once: false, amount: 0.25 }}
       className={`${navbarcolor ? "nav active" : "nav"}`}
-      onMouseOver={handleCloseMenu}
     >
       <div className="nav-center">
         <div className="nav-header">
@@ -65,7 +43,7 @@ const Navbar = () => {
             <div className="logo">
               <img src="./photos/Logo.jpg" className="nav-logo" alt="logo" />
               <p>
-                Nung A Bibile <span> Foundation</span>
+                Holy Trinity <span> Accessories</span>
               </p>
             </div>
           </Link>
@@ -77,36 +55,20 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="links">
-          <li onMouseOver={displaySubmenu}>
-            <button onMouseOver={displaySubmenu} className="link-btn">
-              OUR FOCUS
-              <KeyboardArrowDownIcon className="link-btn" />
-            </button>
-          </li>
-          <li onMouseOver={displaySubmenu}>
-            <button onMouseOver={displaySubmenu} className="link-btn">
-              RESOURCES
-              <KeyboardArrowDownIcon className="link-btn" />
-            </button>
-          </li>
-          <li onMouseOver={displaySubmenu}>
-            <button onMouseOver={displaySubmenu} className="link-btn">
-              WHERE WE WORK
-              <KeyboardArrowDownIcon className="link-btn" />
-            </button>
-          </li>
-
-          <Link to="/volunteer" className="other-links">
-            volunteer
+          <Link to="/">
+            <button className="link-btn">HOME</button>
           </Link>
-          {/*  <Link to="/donation" className="other-links">
-            Donation
-          </Link> */}
-          <Link to="/vision" className="other-links">
-            About us
+          <Link to="/products">
+            <button className="link-btn">PRODUCTS</button>
+          </Link>
+          <Link to="/service">
+            <button className="link-btn">SERVICE</button>
+          </Link>
+          <Link to="/about" className="other-links">
+            ABOUT US
           </Link>
           <Link to="/contact" className="other-links">
-            contact
+            CONTACT
           </Link>
         </ul>
       </div>

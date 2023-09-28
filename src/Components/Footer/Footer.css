@@ -51,6 +51,10 @@ hr {
   margin-bottom: 40px;
   position: relative;
 }
+.col .para {
+  font-size: 2rem;
+  color: #ff8400;
+}
 
 ul li {
   list-style: none;

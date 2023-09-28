@@ -1,221 +1,38 @@
-import React from "react";
 import {
-  FaCreditCard,
-  FaBook,
   FaMapMarker,
   FaPhone,
   FaEnvelope,
-  FaLowVision,
-  FaUserCog,
-  FaChalkboardTeacher,
-  FaCode,
-  FaBriefcase,
-  FaUserGraduate,
-  FaBrain,
-  FaBullseye,
-  FaLightbulb,
+  FaTruck,
+  FaShippingFast,
+  FaBullhorn,
+  FaTags,
+  FaExchangeAlt,
 } from "react-icons/fa";
-
-import { GiStairsGoal } from "react-icons/gi";
 
 export const peopleData = [
   {
     id: 1,
-    image: "./photos/children.png",
-    title: "intensive research work",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/desktop1.jpg",
+    title: "powerful desktop machine",
+    desc: "grap your powerfull mordern desktop comuter  for all kind of your work",
   },
   {
     id: 2,
-    image: "./photos/famers.png",
-    title: "online training",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/earphone1.jpg",
+    title: "Latest ear phone",
+    desc: "listen to music with quality sounded ear phone",
   },
   {
     id: 3,
-    image: "./photos/school.png",
-    title: "professional websites development",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/headset1.jpg",
+    title: "latest headset for good sound",
+    desc: "grap your latest mordern headset for good sound ",
   },
   {
     id: 4,
-    image: "./photos/women.png",
-    title: "software development ",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
-  },
-];
-
-export const sublinks = [
-  {
-    page: "OUR FOCUS",
-    links: [
-      {
-        label: "IMPACT",
-        url: "/impact",
-      },
-      {
-        label: "INNOVATIONS",
-        url: "/innovations",
-      },
-      {
-        label: "INSURANCE",
-        url: "/insurance",
-      },
-      {
-        label: "WOMEN",
-        url: "/women",
-      },
-      {
-        label: "CHILDREN",
-        url: "/children",
-      },
-    ],
-  },
-  {
-    page: "RESOURCES",
-    links: [
-      {
-        label: "PUBLICATIONS",
-        url: "/publications",
-      },
-      {
-        label: "NEWS ROOM",
-        url: "/new",
-      },
-    ],
-  },
-  {
-    page: "WHERE WE WORK",
-    links: [
-      {
-        label: "UPPER-WEST",
-        url: "/upperwest",
-      },
-      {
-        label: "NORTHERN REGION",
-        url: "/northern",
-      },
-    ],
-  },
-];
-
-export const CartData = [
-  {
-    id: 1,
-    image: "./photos/card-image1.jpg",
-    title: "project management ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-  {
-    id: 2,
-    image: "./photos/card-image2.jpg",
-    title: "project management ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-  {
-    id: 3,
-    image: "./photos/card-image3.jpg",
-    title: "project management ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-  {
-    id: 4,
-    image: "./photos/card-image4.jpg",
-    title: "I.T consultancy service ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-];
-
-export const timeLimeData = [
-  {
-    id: 1,
-    Icon: FaCreditCard,
-    heading: "TEACHING",
-    title: "English Language:",
-    desc: "In the 21st century, learning English is a necessary skill for many professions. Learning English has been shown to improve cognitive function, increase your life expectancy, and help one save money. Using English for reading, writing, literature, poetry, world building help the learner to enhance their ability and proficiency of the children in their communication and academic development.",
-  },
-  {
-    id: 2,
-    Icon: FaBook,
-    heading: "SKILL FAIR TRAINING",
-    title: "Coding for Society",
-    desc: "Teaching Computer coding at the school is necessary to expose students to technology and reveal skills needed to develop computer applications. This will also provides with abilities and skills such as critical thinking, persistency, problem-solving, mathematical inclination, processing skills, determination, creativity and innovation.",
-  },
-  {
-    id: 3,
-    Icon: FaBriefcase,
-    heading: "ADOLESCENT TRANSITIONAL EDU.",
-    title: "Hygenic Advocacy",
-    desc: "This involves advocacy for health and menstrual hygiene, career guidance and counselling, reintegration program for school dropouts and provision of scholarship assistance.",
-  },
-  {
-    id: 4,
-    Icon: FaCreditCard,
-    heading: "EMPOWERMENT",
-    title: "livelihood empowerment",
-    desc: "This idea is to empower and alleviate vulnerable and poor women in the society that have no knowledge required to improve on their agriculture practices using organic farming and education methods. It is to help people establish their own small businesses by reaching out to other organizations to assist women.  In rendering the supervision plan for the growth of these businesses, by alleviating them from poverty to become financially independent. ",
-  },
-  {
-    id: 5,
-    Icon: FaBook,
-    heading: "SPECIAL NEED.",
-    title: "special need education",
-    desc: "Focus on those with learning disabilities and support them. Our school program is basically a free community school run after school and on summer basis with the help of trained teachers volunteers. ",
-  },
-];
-
-export const CountUpData = [
-  {
-    id: 1,
-    value: 200,
-    desc: "Children been tought",
-  },
-  {
-    id: 2,
-    value: 100,
-    desc: "women supported  with skill fair",
-  },
-  {
-    id: 3,
-    value: 150,
-    desc: "Farmers been helped",
-  },
-  {
-    id: 4,
-    value: 50,
-    desc: "Basic schools being helped",
-  },
-];
-
-export const Testimonials = [
-  {
-    name: "Rekob Ramya",
-    description:
-      "The impact of this organization on my life is immeasurable. They believed in me when no one else did and gave me the opportunity to pursue my dreams. Thanks to their assistance, I have achieved things I never thought possible.",
-    address: "Sunyani",
-    img: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
-  },
-  {
-    name: "Brandon Savage",
-    description:
-      "The programs and services offered by this organization have truly transformed my life. They equipped me with the necessary skills and knowledge to overcome challenges and create a better future for myself. I am forever grateful.",
-
-    address: "Techiman",
-    img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
-  },
-  {
-    name: "Steve Burns",
-    description:
-      "Words cannot express the impact this organization has had on my life. They not only provided me with essential resources but also restored my hope and belief in myself. I am now thriving and eager to give back to others in need.",
-    address: "Namdom",
-    img: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
-  },
-  {
-    name: "Kevin Canlas",
-    description:
-      "I can't express how grateful I am for the support I received from this organization. They provided me with the resources and guidance I needed to turn my life around. I am now empowered and on a path towards a brighter future.",
-    address: "Tamale",
-    img: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
+    image: "./photos/laptop1.jpg",
+    title: "hp laptop ",
+    desc: "experience a powerfull hp laptop for you learning and gaming",
   },
 ];
 
@@ -240,27 +57,151 @@ export const contactInfo = [
   },
 ];
 
-export const visionItems = [
+export const productData = [
   {
     id: 1,
-    Icon: GiStairsGoal,
-    title: "Our Goal",
-    description:
-      ". To give hope and transformation to the children, and vulnerable poor women living in deprived communities to achieve UN’s Sustainable Development Goals (SDG):",
+    img: "./photos/desktop1.jpg",
+    title: "brand new computer",
+    category: "Electronics",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 5.0,
+    num_bought: 1000,
+    coupon_code: "ZSW2678Z",
   },
+
   {
     id: 2,
-    Icon: FaLowVision,
-    title: " Our Vision",
-    description:
-      "To influence policies and practice across Africa that fosters a safe, supportive and enabling community for persons with special needs to thrive.",
+    img: "./photos/laptop1.jpg",
+    title: "Hp laptop",
+    category: "Electronics",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 3.5,
+    num_bought: 1000,
   },
   {
     id: 3,
-    Icon: FaUserCog,
-    title: "Our Mission",
-    description:
-      "Showcase the creativity and strengths of children with special needs through arts and craft, functional IT activities.",
+    img: "./photos/laptop2.jpg",
+    title: "Brand new sumsung",
+    category: "Electronics",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 4,
+    num_bought: 1000,
+  },
+  {
+    id: 4,
+    img: "./photos/headset1.jpg",
+    title: "Headset",
+    category: "Home Appliance",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 4.5,
+    num_bought: 1000,
+  },
+  {
+    id: 5,
+    img: "./photos/headset2.jpg",
+    title: "Headset",
+    category: "Home Appliance",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 3.5,
+    num_bought: 1000,
+  },
+  {
+    id: 6,
+    img: "./photos/headset4.jpg",
+    title: "Headset",
+    category: "Home Appliance",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 2.5,
+    num_bought: 1000,
+  },
+  {
+    id: 7,
+    img: "./photos/earphone1.jpg",
+    title: "Ear phone",
+    category: "Clothings",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 3,
+    num_bought: 1000,
+  },
+  {
+    id: 8,
+    img: "./photos/earphone2.jpg",
+    title: "Ear phone",
+    category: "Clothings",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 5.0,
+    num_bought: 1000,
+  },
+  {
+    id: 9,
+    img: "./photos/keyboard1.jpg",
+    title: "keyboard",
+    category: "Foot Wear",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 3.0,
+    num_bought: 1000,
+  },
+  {
+    id: 10,
+    img: "./photos/mobile-phone1.jpg",
+    title: "mobile phone",
+    category: "Foot Wear",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 4.5,
+    num_bought: 1000,
+  },
+  {
+    id: 11,
+    img: "./photos/mobile-phone2.jpg",
+    title: "Mobile phone",
+    category: "Foot Wear",
+    disc: "Receive a reading through text message from the comfort of wherever you are! It’s just a conversation between me and you. I will answer questions and provide general readings that have to do with love finances career and spirit advice.",
+    old_price: 50.0,
+    price: 40.0,
+    percentage_off: 10,
+    reviews: 400,
+    rating: 4,
+    num_bought: 1000,
   },
 ];
 
@@ -349,98 +290,95 @@ export const positionData = [
 export const ValuesData = [
   {
     id: 1,
-    Icon: FaLowVision,
-    title: " Our Vision",
-    description: "EMPOWERING PEOPLE OUT OF POVERTY",
+    title: "Quality Assurance",
+    parag:
+      "Our curated selection of accessories undergoes rigorous quality checks to ensure that you receive only the best. We believe in accessories that enhance your devices' performance and longevity.",
   },
   {
     id: 2,
-    Icon: FaUserCog,
-    title: "Our Mission",
-    description: "PROVIDE EDUCATION TO CHILDREN IN DEPRIVE AREA",
+    title: "Convenience",
+    parag:
+      "Say goodbye to the hassle of navigating crowded stores. Our user-friendly online platform lets you explore and purchase your favorite accessories from the comfort of your own space.",
   },
   {
     id: 3,
-    Icon: GiStairsGoal,
-    title: "Our Values",
-    description: "REACHING OUT TO THE VULNERABLE IN SOCIETY",
+    title: "Variety",
+    parag:
+      "From stylish earpieces to innovative touch screens and protective screen guards, we've got you covered. Our extensive range ensures that you find the perfect match for your devices.",
+  },
+  {
+    id: 4,
+    title: "Customer-Centric Approach",
+    parag:
+      "Your satisfaction is our priority. We're committed to providing prompt and responsive customer support to answer your queries and assist you throughout your shopping journey.",
   },
 ];
-
-export const recentActivities = [
+export const service = [
   {
     id: 1,
-    image: "./photos/teaching.jpg",
-    activity: "Capitalize on low hanging fruit to identify ballpark",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+    Icon: FaTruck,
+    title: "Importation",
+    description:
+      "Discover a world of possibilities with our imported electronic accessories. We bring you the latest trends and innovative products from around the globe, ensuring you have access to the best.",
   },
   {
     id: 2,
-    image: "./photos/women.png",
-    activity: "Capitalize on low hanging fruit to identify ballpark",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+    Icon: FaShippingFast,
+    title: "Nationwide Delivery",
+    description:
+      "No matter where you are in Ghana, we've got you covered. Our nationwide delivery service ensures that your selected accessories are delivered to your doorstep quickly and securely.",
   },
   {
     id: 3,
-    image: "./photos/children.png",
-    activity: "Capitalize on low hanging fruit to identify ballpark",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+    Icon: FaBullhorn,
+    title: "Run Promotions",
+    description:
+      "Keep an eye out for our exciting promotions and deals. We believe in offering our customers more value for their money. Enjoy exclusive discounts, limited-time offers, and more!",
+  },
+  {
+    id: 4,
+    Icon: FaTags,
+    title: "Wholesale Price",
+    description:
+      "If you're a business owner looking to stock up on electronic accessories, take advantage of our wholesale pricing. Get access to bulk orders at competitive rates and elevate your business.",
+  },
+  {
+    id: 5,
+    Icon: FaExchangeAlt,
+    title: "Swapping",
+    description:
+      "Upgrade your electronic accessories hassle-free with our swapping service. Trade in your old accessories for new ones, and experience the latest technology without breaking the bank.",
   },
 ];
 
-export const bannerData = [
+export const Testimonials = [
   {
-    Icon: FaChalkboardTeacher,
-    title: "Make a Donation",
-    description: "make a donation to save a life",
-    color: {
-      backGround:
-        "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
-      boxShadow: "0px 10px 20px 0px #F9D59B",
-    },
-    url: "/donation",
+    name: "Rekob Ramya",
+    description:
+      "I needed a new wireless mouse for my work, and I found the perfect one on this site. The Logitech Wireless Mouse works flawlessly, and the price was great too. Really happy with my purchase.",
+    address: "Sunyani",
+    img: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
   },
   {
-    Icon: FaBullseye,
-    title: "fund Raising",
-    description: "your fund will go a long way to touch a life",
-    color: {
-      backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
-      boxShadow: "0px 10px 20px 0px #FDC0C7",
-    },
-    url: "/donation",
-  },
-  {
-    Icon: FaBrain,
-    title: "Become a volnteer",
-    description: "Become a volunteer to impact knowledge",
-    color: {
-      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
-    },
-    url: "/volunteer",
-  },
-];
+    name: "Brandon Savage",
+    description:
+      "I'm in love with the Samsung Galaxy Buds Pro I purchased from this store. The sound quality is amazing and they're so comfortable to wear. The battery life is impressive too!",
 
-export const voluntaryData = [
-  {
-    role: "Graphic Designer",
-    image: "photos/leader1.jpg",
-    name: "Jane Smith",
+    address: "Techiman",
+    img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
   },
   {
-    role: "frontend mentor",
-    image: "photos/leader2.jpg",
-    name: "Selina lowrence",
+    name: "Steve Burns",
+    description:
+      "I recently bought the Dell XPS 13 laptop from here and it's been a fantastic experience. The laptop arrived on time and in perfect condition. It's super fast and the build quality is impressive.",
+    address: "Namdom",
+    img: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
   },
   {
-    role: "French Teacher",
-    image: "photos/leader3.jpg",
-    name: "David Lee",
-  },
-  {
-    role: "Mobile app mentor",
-    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
-    name: "Emily Thompson",
+    name: "Kevin Canlas",
+    description:
+      "I purchased the iPhone 12 from this shop and I'm extremely satisfied with the product. The quality is top-notch and the customer service was excellent. Highly recommended!",
+    address: "Tamale",
+    img: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
   },
 ];

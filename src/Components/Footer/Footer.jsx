@@ -16,27 +16,24 @@ const Footer = () => {
       <div className="row">
         <div className="col">
           <img src="../../photos/Logo.jpg" alt="" />
-          <p className="para">The Nung A Bibile Foundation (NABF)</p>
+          <p className="para">
+            {" "}
+            Holy Trinity <br /> Accessories
+          </p>
         </div>
         <div className="col">
           <h3>
-            Organization Details
+            Company's Details
             <div className="underline">
               <span></span>
             </div>
           </h3>
           <ul>
-            <Link to="/vision" style={{ textDecoration: "none" }}>
-              <li>Our Vision, Mission & Values</li>
+            <Link to="/service" style={{ textDecoration: "none" }}>
+              <li>SERVICE</li>
             </Link>
-            <Link to="/history" style={{ textDecoration: "none" }}>
-              <li>Our History</li>
-            </Link>
-            <Link to="/leadership" style={{ textDecoration: "none" }}>
-              <li>Our Leadership</li>
-            </Link>
-            <Link to="/accountability" style={{ textDecoration: "none" }}>
-              <li>Accountability</li>
+            <Link to="/about" style={{ textDecoration: "none" }}>
+              <li>ABOUT</li>
             </Link>
           </ul>
         </div>
@@ -48,14 +45,11 @@ const Footer = () => {
             </div>
           </h3>
           <ul>
-            <Link to="/livelihood" style={{ textDecoration: "none" }}>
-              <li>our livelihoood promise</li>
+            <Link to="/products" style={{ textDecoration: "none" }}>
+              <li>PRODUCTS</li>
             </Link>
-            <Link to="/projects" style={{ textDecoration: "none" }}>
-              <li>projects</li>
-            </Link>
-            <Link to="/donations" style={{ textDecoration: "none" }}>
-              <li>impact of donations</li>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <li>CONTACT US</li>
             </Link>
           </ul>
         </div>
