@@ -16,24 +16,27 @@ const Footer = () => {
       <div className="row">
         <div className="col">
           <img src="../../photos/Logo.jpg" alt="" />
-          <p className="para">
-            {" "}
-            Holy Trinity <br /> Accessories
-          </p>
+          <p className="para">The Nung A Bibile Foundation (NABF)</p>
         </div>
         <div className="col">
           <h3>
-            Company's Details
+            Company Details
             <div className="underline">
               <span></span>
             </div>
           </h3>
           <ul>
-            <Link to="/service" style={{ textDecoration: "none" }}>
-              <li>SERVICE</li>
+            <Link to="/vision">
+              <li>Our Vision, Mission & Values</li>
             </Link>
-            <Link to="/about" style={{ textDecoration: "none" }}>
-              <li>ABOUT</li>
+            <Link to="/history">
+              <li>Our History</li>
+            </Link>
+            <Link to="/leadership">
+              <li>Our Leadership</li>
+            </Link>
+            <Link to="/accountability">
+              <li>Accountability</li>
             </Link>
           </ul>
         </div>
@@ -45,11 +48,14 @@ const Footer = () => {
             </div>
           </h3>
           <ul>
-            <Link to="/products" style={{ textDecoration: "none" }}>
-              <li>PRODUCTS</li>
+            <Link to="/livelihood">
+              <li>our livelihoood promise</li>
             </Link>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              <li>CONTACT US</li>
+            <Link to="/projects">
+              <li>projects</li>
+            </Link>
+            <Link to="/donations">
+              <li>impact of donations</li>
             </Link>
           </ul>
         </div>
@@ -73,7 +79,7 @@ const Footer = () => {
           </form>
           <div className="social-icons">
             <li className="icon">
-              <a href="https://www.facebook.com/profile.php?id=100094149665884">
+              <a href="https://web.facebook.com/nsoh.peter.5">
                 <FaFacebook />
               </a>
             </li>
