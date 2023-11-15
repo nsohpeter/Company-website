@@ -1,8 +1,21 @@
 .main-home {
   background-color: var(--clr-white);
   overflow: hidden;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  gap: 30px;
 }
 
 .products-section {
   margin-top: 2rem;
+}
+
+.values-container {
+  margin-top: 3rem;
+}
+
+.activity-container {
+  margin-top: 3rem;
 }

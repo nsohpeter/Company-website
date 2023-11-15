@@ -6,7 +6,7 @@ import { modelsData } from "../../Utils/Data";
 const Models = () => {
   return (
     <div className="main-model-container">
-      <h2 style={{ textAlign: "center" }}>OUR MODELS</h2>
+      <h2 style={{ textAlign: "center", fontSize: "2.3rem" }}>OUR MODELS</h2>
       <div className="model-container">
         {modelsData.map((model, index) => {
           const { Icon, name, description, url } = model;

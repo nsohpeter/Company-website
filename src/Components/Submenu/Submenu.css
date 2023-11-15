@@ -13,7 +13,7 @@
 }
 
 .submenu {
-  background: var(--clr-white);
+  background: #efe9e9;
 
   box-shadow: var(--dark-shadow);
   position: absolute;
@@ -23,7 +23,7 @@
   transform: translateX(-50%);
   z-index: 99;
   display: none;
-  padding: 2.5rem;
+  padding: 50px;
   border-radius: var(--radius);
   transition: var(--transition);
 }
@@ -34,12 +34,13 @@
 
 .submenu-center {
   display: grid;
-  gap: 0.3rem 0.5rem;
+  gap: 0.5rem 0.5rem;
 }
 
 .col-3 {
   grid-template-columns: repeat(3, 1fr);
 }
+
 /* .col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -68,6 +69,6 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }

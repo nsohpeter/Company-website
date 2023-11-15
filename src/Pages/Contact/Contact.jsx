@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Contact.css";
 import { contactInfo } from "../../Utils/Data";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+
+  //template_reguwda
+  //service_13dprtg
+
+  // HDaG1vjWci2yJDNMk
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,16 +27,38 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform form submission logic here
-    // You can access the form data using the formData object
-    //console.log("Form submitted:", formData);
-    // Reset form fields
-    setFormData({
-      fullName: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    setLoading(true);
+    emailjs
+      .send(
+        "service_13dprtg",
+        "template_reguwda",
+        {
+          from_name: formData.fullName,
+          to_name: "peter",
+          from_email: formData.email,
+          to_email: "apiahpetertoch@gmail.com",
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "HDaG1vjWci2yJDNMk"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("thankyou for contacting.");
+          setFormData({
+            fullName: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error.text);
+          alert("oops!, something went wrong");
+        }
+      );
   };
   return (
     <div className="main-contact-conatainer">
@@ -40,7 +70,7 @@ const Contact = () => {
             return (
               <div key={index} className="contact-datail">
                 <div className="icon">{<Icon />}</div>
-                <div className="detail-text">
+                <div className="contactDetail-text">
                   <h3>{title}</h3>
                   <p>{value}</p>
                 </div>
@@ -50,7 +80,7 @@ const Contact = () => {
         </div>
         <div className="contact-form">
           <h2>Send me a message</h2>
-          <form action="">
+          <form action="" ref={form} onSubmit={handleSubmit}>
             <input
               type="text"
               id="fullName"

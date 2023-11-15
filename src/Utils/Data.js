@@ -21,53 +21,67 @@ import { GiStairsGoal } from "react-icons/gi";
 export const peopleData = [
   {
     id: 1,
-    image: "./photos/children.png",
-    title: "intensive research work",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/classroom.png",
   },
   {
     id: 2,
-    image: "./photos/famers.png",
-    title: "online training",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/harvest2.png",
   },
   {
     id: 3,
-    image: "./photos/school.png",
-    title: "professional websites development",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/games.png",
   },
   {
     id: 4,
-    image: "./photos/women.png",
-    title: "software development ",
-    desc: "we are here to help you realise your potentials and acheive a maximum goal",
+    image: "./photos/socialize-children.png",
   },
 ];
 
 export const sublinks = [
   {
+    page: "ABOUT US",
+    links: [
+      // {
+      //   label: "NABF overview",
+      //   url: "/",
+      // },
+      {
+        label: "Mission, Vision & Values",
+        url: "/vision",
+      },
+      {
+        label: "Leadership",
+        url: "/leadership",
+      },
+    ],
+  },
+
+  {
     page: "OUR FOCUS",
     links: [
       {
-        label: "IMPACT",
+        label: "Impact",
         url: "/impact",
       },
       {
-        label: "INNOVATIONS",
+        label: "Innovations",
         url: "/innovations",
       },
       {
-        label: "INSURANCE",
-        url: "/insurance",
+        label: "Teaching",
+        url: "/teaching",
       },
       {
-        label: "WOMEN",
-        url: "/women",
+        label: "Empowerment",
+        url: "/empowerment",
       },
       {
-        label: "CHILDREN",
-        url: "/children",
+        label: "Digital Literacy",
+        url: "/literacy",
+      },
+      {
+        label: "Special Needs Education",
+        url: "/specialNeeds",
       },
     ],
   },
@@ -75,11 +89,11 @@ export const sublinks = [
     page: "RESOURCES",
     links: [
       {
-        label: "PUBLICATIONS",
+        label: "Publications",
         url: "/publications",
       },
       {
-        label: "NEWS ROOM",
+        label: "New room",
         url: "/new",
       },
     ],
@@ -88,41 +102,22 @@ export const sublinks = [
     page: "WHERE WE WORK",
     links: [
       {
-        label: "UPPER-WEST",
+        label: "Upper-West",
         url: "/upperwest",
       },
       {
-        label: "NORTHERN REGION",
+        label: "Nothern",
         url: "/northern",
       },
+      {
+        label: "Bono Region",
+        url: "/bono",
+      },
+      {
+        label: "Greater Accra",
+        url: "/accra",
+      },
     ],
-  },
-];
-
-export const CartData = [
-  {
-    id: 1,
-    image: "./photos/card-image1.jpg",
-    title: "project management ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-  {
-    id: 2,
-    image: "./photos/card-image2.jpg",
-    title: "project management ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-  {
-    id: 3,
-    image: "./photos/card-image3.jpg",
-    title: "project management ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
-  },
-  {
-    id: 4,
-    image: "./photos/card-image4.jpg",
-    title: "I.T consultancy service ",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quasi provident ad nulla itaque quos iste minus cumque exercitationem impedit!",
   },
 ];
 
@@ -184,38 +179,6 @@ export const CountUpData = [
     id: 4,
     value: 50,
     desc: "Basic schools being helped",
-  },
-];
-
-export const Testimonials = [
-  {
-    name: "Rekob Ramya",
-    description:
-      "The impact of this organization on my life is immeasurable. They believed in me when no one else did and gave me the opportunity to pursue my dreams. Thanks to their assistance, I have achieved things I never thought possible.",
-    address: "Sunyani",
-    img: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
-  },
-  {
-    name: "Brandon Savage",
-    description:
-      "The programs and services offered by this organization have truly transformed my life. They equipped me with the necessary skills and knowledge to overcome challenges and create a better future for myself. I am forever grateful.",
-
-    address: "Techiman",
-    img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
-  },
-  {
-    name: "Steve Burns",
-    description:
-      "Words cannot express the impact this organization has had on my life. They not only provided me with essential resources but also restored my hope and belief in myself. I am now thriving and eager to give back to others in need.",
-    address: "Namdom",
-    img: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
-  },
-  {
-    name: "Kevin Canlas",
-    description:
-      "I can't express how grateful I am for the support I received from this organization. They provided me with the resources and guidance I needed to turn my life around. I am now empowered and on a path towards a brighter future.",
-    address: "Tamale",
-    img: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
   },
 ];
 
@@ -296,7 +259,7 @@ export const modelsData = [
   {
     Icon: FaBrain,
     name: "Special Needs Education",
-    url: "specialNeeds",
+    url: "/specialNeeds",
     description:
       "Catering to the unique educational needs of individuals with special needs and promoting inclusivity.",
   },
@@ -316,36 +279,6 @@ export const modelsData = [
   },
 ];
 
-export const positionData = [
-  {
-    role: "Graphic Designer",
-    image: "photos/leader1.jpg",
-    name: "Jane Smith",
-    description:
-      "Creative and detail-oriented graphic designer with expertise in Adobe Creative Suite. Proficient in creating visually appealing designs for both print and digital media.",
-  },
-  {
-    role: "Marketing Manager",
-    image: "photos/leader2.jpg",
-    name: "Alex Johnson",
-    description:
-      "Results-driven marketing manager with a proven track record in developing and executing successful marketing campaigns. Skilled in market research, strategic planning, and brand management.",
-  },
-  {
-    role: "Data Analyst",
-    image: "photos/leader3.jpg",
-    name: "David Lee",
-    description:
-      "Analytical and detail-oriented data analyst with expertise in data manipulation, statistical analysis, and data visualization. Proficient in programming languages such as Python and SQL. ",
-  },
-  {
-    role: "Project Manager",
-    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
-    name: "Emily Thompson",
-    description:
-      "Seasoned project manager with a strong background in leading cross-functional teams and managing complex projects. Skilled in project planning, budgeting, and resource allocation. ",
-  },
-];
 export const ValuesData = [
   {
     id: 1,
@@ -370,21 +303,21 @@ export const ValuesData = [
 export const recentActivities = [
   {
     id: 1,
-    image: "./photos/teaching.jpg",
-    activity: "Capitalize on low hanging fruit to identify ballpark",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+    image: "./photos/teaching.png",
+    activity: "providing voluntery teaching ",
+    desc: "Nung A Bibile Foundation has taken an important initiative to help impact knowledge to Ghanaian children.Education is the key to success so the foundation deem it necessay to provide voluntery education to children",
   },
   {
     id: 2,
-    image: "./photos/women.png",
-    activity: "Capitalize on low hanging fruit to identify ballpark",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+    image: "./photos/harvest2.png",
+    activity: "Women Empowerment",
+    desc: "Nung A Bibile Foundation has seen that women are very vulnerable in the society in term jobs therfor the foundation steps in to help women in the various manaul works for food and money for their basic needs",
   },
   {
     id: 3,
-    image: "./photos/children.png",
-    activity: "Capitalize on low hanging fruit to identify ballpark",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.",
+    image: "./photos/maize-farming.png",
+    activity: "Carrying out farming activities",
+    desc: "In order to contribute to zero hunger in SDG goal, the Foundation has taken an initiative to cultivate soya beans which can be used to help or feed the vulnurable and disabled in the society",
   },
 ];
 
@@ -425,22 +358,85 @@ export const bannerData = [
 export const voluntaryData = [
   {
     role: "Graphic Designer",
-    image: "photos/leader1.jpg",
+    image: "/photos/volunteer1.jpg",
     name: "Jane Smith",
   },
   {
     role: "frontend mentor",
-    image: "photos/leader2.jpg",
+    image: "/photos/volunteer2.jpg",
     name: "Selina lowrence",
   },
   {
     role: "French Teacher",
-    image: "photos/leader3.jpg",
+    image: "/photos/volunteer3.jpg",
     name: "David Lee",
   },
   {
     role: "Mobile app mentor",
-    image: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
-    name: "Emily Thompson",
+    image: "/photos/Peter.png",
+    name: "Nsoh peter",
+  },
+];
+export const BoardLeadData = [
+  {
+    id: 1,
+    name: "Lodo Josuah Kojo",
+    image: "/photos/lodo.png",
+    position: "Chief Excutive Director",
+    bio: "Lodo Josuah Kojo is the visionary leader behind our company's success. With over 20 years of experience in the industry, Lodo has steered our organization to new heights. His commitment to innovation and strategic thinking has been the driving force behind our growth.",
+  },
+
+  {
+    id: 2,
+    name: "Benjamin Amoako-Attah",
+    image: "/photos/Ben.png",
+    position: "Director for policy  formulation",
+    bio: "Benjamin Amoako-Attah, a seasoned expert in policy formulation, brings his extensive knowledge to our organization. His strategic insights and dedication to sound policy development ensure that our company operates within a framework that aligns with best practices and regulatory standards.",
+  },
+  {
+    id: 3,
+    name: "Albert kofi gyakye quansah",
+    image: "/photos/Kofi.png",
+    position: "Director of Resources and Revenue Mobilization,",
+    bio: "Albert Kofi Gyakye Quansah, a financial wizard, oversees our company's resources and revenue mobilization. His strategic financial planning and sound investment decisions have played a crucial role in our financial stability and growth.",
+  },
+  {
+    id: 4,
+    name: "Samuel Kofi Sogah",
+    image: "/photos/volunteer3.jpg",
+    position: "Director of Finance",
+    bio: "Samuel Kofi Sogah is a financial wizard who oversees our company's fiscal health. Her strategic financial planning and sound investment decisions have been instrumental in our financial stability and growth.",
+  },
+];
+export const OtherLeadData = [
+  {
+    id: 1,
+    name: "Evans Okyei",
+    image: "/photos/volunteer1.jpg",
+    position: " Dip Director for policy  formulation",
+    bio: "Evans Okyei is a seasoned operations expert with a proven track record of optimizing efficiency and driving results. Her dedication to streamlining processes ensures our day-to-day operations run smoothly and effectively.",
+  },
+  {
+    id: 2,
+    name: "Soyeh mavis",
+    image: "/photos/Mavis.png",
+    position: "General Secretary",
+    bio: "Soyeh Mavis is a dedicated General Secretary who brings organizational expertise and leadership to our team. With a strong commitment to effective communication and coordination, she plays a crucial role in ensuring smooth operations and fostering a positive work environment.",
+  },
+
+  {
+    id: 3,
+    name: "Nsoh Peter",
+    image: "/photos/Peter.png",
+    position: "System Administrator",
+    bio: "Nsoh Peter is a technology guru who leads our cutting-edge IT department. With a passion for innovation, he keeps us at the forefront of technological advancements, ensuring our products and services remain top-notch.",
+  },
+
+  {
+    id: 4,
+    name: "Nyador Dorcas",
+    image: "/photos/volunteer2.jpg",
+    position: "Dip General Secretary",
+    bio: "Nyador Dorcas is a dedicated  Secretary who brings organizational expertise and leadership to our team. With a strong commitment to effective communication and coordination",
   },
 ];

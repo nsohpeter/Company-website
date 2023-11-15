@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbarcolor, setNavbarColor] = useState(false);
-  const {} = useSelector((store) => store.General);
+  // const {} = useSelector((store) => store.General);
   const dispatch = useDispatch();
 
   const displaySubmenu = (e) => {
@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="nav-header">
           <Link to="/" style={{ textDecoration: "none" }}>
             <div className="logo">
-              <img src="./photos/Logo.jpg" className="nav-logo" alt="logo" />
+              <img src="/photos/logo.png" className="nav-logo" alt="logo" />
               <p>
                 Nung A Bibile <span> Foundation</span>
               </p>
@@ -77,6 +77,12 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="links">
+          <li onMouseOver={displaySubmenu}>
+            <button onMouseOver={displaySubmenu} className="link-btn">
+              ABOUT US
+              <KeyboardArrowDownIcon className="link-btn" />
+            </button>
+          </li>
           <li onMouseOver={displaySubmenu}>
             <button onMouseOver={displaySubmenu} className="link-btn">
               OUR FOCUS
@@ -98,12 +104,6 @@ const Navbar = () => {
 
           <Link to="/volunteer" className="other-links">
             volunteer
-          </Link>
-          {/*  <Link to="/donation" className="other-links">
-            Donation
-          </Link> */}
-          <Link to="/vision" className="other-links">
-            About us
           </Link>
           <Link to="/contact" className="other-links">
             contact

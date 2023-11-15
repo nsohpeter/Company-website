@@ -56,7 +56,11 @@ const CounterSlick = () => {
 
   return (
     <div className="main-container">
-      <h2 style={{ textAlign: "center", marginTop: "2rem" }}>Achievements</h2>
+      <h2
+        style={{ textAlign: "center", marginTop: "2rem", fontSize: "2.2rem" }}
+      >
+        Achievements
+      </h2>
       <Slider {...settings} className="main-counter">
         {CountUpData.map((item, index) => {
           return (

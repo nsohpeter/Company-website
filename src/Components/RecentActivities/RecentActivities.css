@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .single-activity {
   width: 100%;
   background-color: #fff;
@@ -18,27 +19,33 @@
   justify-content: center;
   margin: 1rem 2rem;
 }
+
 .single-activity img {
   width: 100%;
   height: 300px;
 }
+
 .single-activity .activity-text {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 90%;
   margin-top: 1.2rem;
+  color: black;
 }
+
 .single-activity .activity-text h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
+
 .single-activity .activity-text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
   font-weight: 400;
 }
+
 .activity-btn {
   margin-top: 1rem;
   width: 60%;
@@ -48,6 +55,7 @@
   padding: 10px;
   border: 2px solid red;
 }
+
 .activity-btn:hover {
   background-color: coral;
   color: #fff;

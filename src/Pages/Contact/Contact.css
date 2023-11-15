@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .content {
   /* width: 100%; */
   display: flex;
@@ -44,18 +45,19 @@
   font-size: 22px;
 }
 
-.contact-datail .detail-text {
+.contact-datail .contactDetail-text {
   margin-left: 20px;
   font-size: 20px;
   font-weight: 300;
   color: #fff;
 }
 
-.contact-datail .detail-text h3 {
+.contact-datail .contactDetail-text h3 {
   font-weight: 500;
   color: #00bcd4;
 }
-.contact-datail .detail-text p {
+
+.contact-datail .contactDetail-text p {
   font-weight: 500;
 }
 
@@ -65,6 +67,7 @@
   padding: 2em;
   background: #fff;
 }
+
 .contact-form form {
   width: 100%;
 }

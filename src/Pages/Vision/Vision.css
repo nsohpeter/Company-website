@@ -5,11 +5,9 @@
 }
 
 .bamner-container {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(184, 193, 248, 0.52),
-      rgba(231, 78, 190, 0.73)
-    ),
+      rgba(231, 78, 190, 0.73)),
     url("../../../photos/vision-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +23,32 @@
   color: #fff;
   top: 30%;
   position: absolute;
+}
+
+.content-section {
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 3rem;
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  flex: 1;
+
+}
+
+.left img {
+  width: 80%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.right {
+  flex: 1;
+  margin-top: 30px;
+  font-size: 1.3rem;
+
 }
 
 .our-reasons {
@@ -52,33 +76,66 @@
   border-radius: 5px;
   transition: 0.5s all ease-in-out;
 }
+
 .item-card:hover {
   background-color: #e1cccc;
   box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
   -webkit-box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
   -moz-box-shadow: -3px 0px 20px 0px rgba(80, 19, 19, 0.88);
 }
+
 .card-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
 }
+
 .item-card h2 {
   font-size: 1.5rem;
   color: crimson;
 }
+
 .item-card p {
   font-size: 1.2rem;
 }
 
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+  .right p {
+
+    font-size: 1.1rem;
+
+  }
+}
+
 @media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .right {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .left img {
+    width: 90%;
+    height: 500px;
+
+  }
+
   .our-reasons {
     margin-top: 2rem;
   }
+
   .bamner-container {
     padding: 20%;
   }
+
   .bamner-container .text {
     font-size: 0.8rem;
   }
@@ -86,8 +143,19 @@
   .card-container {
     flex-direction: column;
   }
+
   .item-card {
     padding: 10px;
     width: 100%;
   }
 }
+
+@media (max-width: 640px) {
+  .right {
+
+    font-size: 1.1rem;
+
+  }
+}
+
+@media (max-width: 480px) {}

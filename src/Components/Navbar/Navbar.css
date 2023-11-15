@@ -10,6 +10,7 @@
   transform: none;
   transition: all 0.3s ease;
 }
+
 .nav.active {
   background-color: white;
   color: #000;
@@ -46,10 +47,10 @@
   color: crimson;
 }
 
-.nav-logo {
+.logo img {
   background-color: transparent;
-  width: 40%;
-  height: 40%;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
 
@@ -94,37 +95,46 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+
   .toggle-btn {
     display: none;
   }
+
   .signIn {
     display: inline-block;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
   }
+
   .nav-header .logo {
     width: 100%;
   }
+
   .nav-header p {
     font-size: 1.2rem;
   }
+
   .nav-header .logo img {
     width: 20%;
   }
+
   .nav-header .toggle-btn {
     display: none;
   }
+
   .nav-links {
     white-space: nowrap;
     display: flex;
     align-items: center;
     gap: 0.8rem;
   }
+
   .links {
     display: flex;
     align-items: center;
     gap: 0.8rem;
   }
+
   .links li {
     margin-bottom: 0px;
     font-weight: 600;
@@ -143,6 +153,7 @@
     display: flex;
     align-items: center;
   }
+
   .other-links {
     text-decoration: none;
     white-space: nowrap;

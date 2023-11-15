@@ -13,6 +13,10 @@ import Vision from "./Pages/Vision/Vision";
 import Donation from "./Pages/Donations/Donation";
 import Teaching from "./Pages/Teaching/Teaching";
 import Volunteer from "./Pages/volunteer/Volunteer";
+import LeaderShip from "./Pages/LeaderShip/LeaderShip";
+import Empowerment from "./Pages/Empowerment/Empowerment";
+import SingleLeader from "./Pages/SingleLeader/SingleLeader";
+import SlideSinglePerson from "./Pages/SlideSinglePerson/SlideSinglePerson";
 
 /* import Accountable from "./Pages/Accountability/Accountable";
 import Children from "./Pages/Children/Children";
@@ -21,12 +25,10 @@ import History from "./Pages/History/History";
 import Impact from "./Pages/Impact/Impact";
 import Innovation from "./Pages/Innovation/Innovation";
 import Insurance from "./Pages/Insurance/Insurance";
-import Leadership from "./Pages/LeaderShip/Leadership";
 import Women from "./Pages/Women/Women";
 import Branch from "./Pages/Workplaces/Branch";
 
 import SpecialNeedEdu from "./Pages/SpecialNeedEdu/SpecialNeed";
-import Empowerment from "./Pages/Empowerment/Empowerment";
 import DigitalLiteracy from "./Pages/Digital-Literacy/DigitalLiteracy";
 import AdolescentEdu from "./Pages/AdolescentEdu/AdolescentEdu"; */
 
@@ -45,6 +47,13 @@ function App() {
             <Route path="volunteer" element={<Volunteer />} />
             <Route path="vision" element={<Vision />} />
             <Route path="teaching" element={<Teaching />} />
+            <Route path="leadership" element={<LeaderShip />} />
+            <Route path="empowerment" element={<Empowerment />} />
+            <Route path="/singleleader/:id" element={<SingleLeader />} />
+            <Route
+              path="/slidesingleperson/:id"
+              element={<SlideSinglePerson />}
+            />
 
             {/*  <Route path="about" element={<About />} />
             <Route path="accountability" element={<Accountable />} />
@@ -54,11 +63,9 @@ function App() {
             <Route path="impact" element={<Impact />} />
             <Route path="innovations" element={<Innovation />} />
             <Route path="insurance" element={<Insurance />} />
-            <Route path="leadership" element={<Leadership />} />
             <Route path="women" element={<Women />} />
             <Route path="branch" element={<Branch />} />
             <Route path="literacy" element={<DigitalLiteracy />} />
-            <Route path="empowerment" element={<Empowerment />} />
             <Route path="adolescentEdu" element={<AdolescentEdu />} />
             <Route path="specialNeeds" element={<SpecialNeedEdu />} /> */}
           </Route>

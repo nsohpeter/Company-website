@@ -4,6 +4,7 @@ import "./HeroSlider.css";
 import { useState, useEffect } from "react";
 
 import { peopleData } from "../../Utils/Data";
+import { Link } from "react-router-dom";
 
 const HeroSlider = () => {
   const [people, setPeople] = useState(peopleData);
@@ -63,12 +64,16 @@ const People = ({ people, index }) => {
       <div className="overlay">
         <div className="overlay-text">
           <h1 className="overlay-text-item">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />{" "}
-            Impedit, cumque!
+            The Nung A Bibile Foundation (NABF) is a registered non-profit
+            organisation established in 2022.
           </h1>
           <div className="buttons-container">
-            <button className="hero-btn">learn more</button>
-            <button className="hero-btn">Donate</button>
+            <Link to="/vision">
+              <button className="hero-btn">learn more</button>
+            </Link>
+            <Link to="/donation">
+              <button className="hero-btn">Donate</button>
+            </Link>
           </div>
         </div>
       </div>
