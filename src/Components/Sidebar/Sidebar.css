@@ -34,7 +34,7 @@
   box-shadow: var(--dark-shadow);
   position: fixed;
   padding: 4rem 2rem;
-  background-color: #3d2a2a;
+  background-color: #3b3636;
 }
 
 .sidebar .close-btn {
@@ -46,6 +46,7 @@
   right: 0.1rem;
   cursor: pointer;
 }
+
 .sidebar .close-icon {
   font-size: 2.5rem;
   color: crimson;
@@ -68,16 +69,24 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .nested-sidebar-links {
+  color: #fff;
 }
 
 .nested-subLinks {
-  color: #fff;
+  margin-top: 1.2rem;
+}
+
+.Links-item {
+  color: #d5cbcb;
+
 }
 
 .other-links {
   margin-left: 1.3rem;
 }
+
 .other-list {
   font-size: 1.5rem;
   color: #fff;

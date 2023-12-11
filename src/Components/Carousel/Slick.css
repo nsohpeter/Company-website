@@ -89,7 +89,7 @@
 
 .slick-prev,
 .slick-next {
-    top: 43% !important;
+    top: 35% !important;
     background-color: crimson !important;
 
     z-index: 99 !important;
@@ -138,4 +138,14 @@
     }
 }
 
-@media(max-width:640px) {}
+@media(max-width:480px) {
+    .slick-next {
+        right: 20px !important;
+    }
+
+
+    .slick-prev {
+        left: 20px !important;
+        z-index: 99 !important;
+    }
+}

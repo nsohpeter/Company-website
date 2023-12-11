@@ -30,4 +30,17 @@
 .leadership-desc p {
     font-size: 1.2rem;
     max-width: 1000px;
+    text-align: justify;
+}
+
+@media(max-width:768px) {
+    .leadership-desc {
+        max-width: 450px;
+    }
+}
+
+@media(max-width:480px) {
+    .leadership-desc {
+        max-width: 260px;
+    }
 }

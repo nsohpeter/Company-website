@@ -97,7 +97,7 @@ article.nextSlide {
   opacity: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .section-center {
     height: 300px;
   }
@@ -110,13 +110,14 @@ article.nextSlide {
     height: 300px;
   }
 
-  .section-center .overlay-text-item {
-    width: 100%;
-  }
-
   .overlay .overlay-text {
     font-size: 0.5rem;
+    width: 100%;
+    font-weight: 700;
   }
+
+  .section-center .overlay-text-item {}
+
 
   /* .text-box p {
     font-size: 0.8rem;

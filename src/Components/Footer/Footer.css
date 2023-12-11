@@ -24,6 +24,22 @@ footer {
   margin-bottom: 30px;
 }
 
+.partnership {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.partnership p {
+  color: #f1c698;
+  font-size: 1.2rem;
+}
+
+.official {
+  margin-top: 2rem;
+  color: #f1c18d;
+}
+
 .col {
   flex-basis: 20%;
   padding: 15px;
@@ -51,6 +67,7 @@ hr {
   margin-bottom: 40px;
   position: relative;
 }
+
 .col .para {
   font-size: 1.6rem;
   color: #ff8400;
@@ -90,6 +107,7 @@ ul li a {
   outline: none;
   cursor: pointer;
 }
+
 .social-icons {
   margin-top: -1rem;
   display: flex;
@@ -103,6 +121,7 @@ ul li a {
   width: 40px;
   height: 40px;
 }
+
 .icon a {
   width: 40px;
   height: 40px;
@@ -140,6 +159,7 @@ ul li a {
   0% {
     left: -20px;
   }
+
   100% {
     left: 100%;
   }
@@ -149,13 +169,16 @@ ul li a {
   footer {
     bottom: unset;
   }
+
   .col {
     flex-basis: 100%;
   }
+
   .col:nth-child(2),
   .col:nth-child(3) {
     flex-basis: 100%;
   }
+
   .row {
     width: 100%;
   }

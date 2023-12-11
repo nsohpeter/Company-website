@@ -19,6 +19,12 @@ const Footer = () => {
           <p className="para">
             The Nung A Bibile <br /> Foundation (NABF)
           </p>
+
+          <h2 className="official">official partners</h2>
+          <div className="partnership">
+            <p>Reginal Ministry, Bono regon</p>
+            <img src="../../photos/ministry.png" alt="" />
+          </div>
         </div>
         <div className="col">
           <h3>
@@ -105,7 +111,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="copy-right">
-        Made by SUPERCODE @ 2021- All Rights Reserved
+        nung A Bibile Foundation @ 2023- All Rights Reserved
       </p>
     </footer>
   );

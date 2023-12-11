@@ -64,7 +64,7 @@ const People = ({ people, index }) => {
       <div className="overlay">
         <div className="overlay-text">
           <h1 className="overlay-text-item">
-            The Nung A Bibile Foundation (NABF) is a registered non-profit
+            Nung A Bibile Foundation (NABF) is a registered non-profit
             organisation established in 2022.
           </h1>
           <div className="buttons-container">

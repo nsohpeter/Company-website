@@ -51,6 +51,8 @@ const Sidebar = () => {
                       return (
                         <li key={index} className="nested-subLinks">
                           <Link
+                            className="Links-item"
+                            style={{ textDecoration: "none" }}
                             to={url}
                             onClick={() => dispatch(closeSidebar())}
                           >
