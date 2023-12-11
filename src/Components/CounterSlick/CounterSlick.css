@@ -19,22 +19,28 @@
   align-items: center;
   justify-content: center;
 }
+
 .single-item h1 {
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
 }
+
 .single-item p {
+  font-weight: 500;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .main-counter .single-item {
     padding: 2rem;
   }
+
   .single-item h1 {
     font-size: 3.4rem;
   }
+
   .single-item p {
     font-size: 1.5rem;
   }

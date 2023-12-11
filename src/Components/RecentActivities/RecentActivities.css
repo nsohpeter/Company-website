@@ -38,11 +38,12 @@
 .single-activity .activity-text h3 {
   font-size: 1.3rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .single-activity .activity-text p {
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: center;
   font-weight: 400;
 }
 

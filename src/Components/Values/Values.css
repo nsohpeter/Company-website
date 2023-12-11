@@ -12,25 +12,29 @@
 
 .single-value {
   display: flex;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  padding: 20px;
 }
 
 .single-value h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #888080;
 }
 
 .single-value p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 100%;
   max-width: 350px;
   color: #ff8400;
+  text-align: center;
 }
 
 .single-value .value-icon svg {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #000;
 }
 

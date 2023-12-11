@@ -8,9 +8,6 @@
   margin: 0 auto;
   width: 100%;
   margin-top: 2rem;
-  /* display: flex;
-  flex-wrap: wrap; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
   grid-column-gap: 2rem;
@@ -62,12 +59,14 @@
 }
 
 .model-text h2 {
+  text-align: center;
   font-size: 1.7rem;
   font-weight: 600;
   max-width: 400px;
 }
 
 .model-text p {
+  text-align: center;
   font-size: 1.2rem;
   max-width: 350px;
 }
